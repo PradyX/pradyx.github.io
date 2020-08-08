@@ -27,8 +27,8 @@ body {
 }
 
 .slides-navigation .prev, .slides-navigation .next {
-  width: 47px;
-  height: 47px;
+  width: 20px;
+  height: 20px;
   background-size: cover;
   background-repeat: no-repeat;
 }
