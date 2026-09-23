@@ -1,0 +1,91 @@
+{# --- Contact --- #}
+<section class="contact-section" aria-labelledby="contact-heading">
+  <h2 id="contact-heading" class="section-heading">Get in touch</h2>
+  <ul class="contact-list" role="list">
+    {% for item in portfolio.contact %}
+    <li class="contact-item" role="listitem">
+      {% if item.type == 'phone' %}
+      <a href="tel:{{ item.value }}" class="contact-link" aria-label="Call {{ item.value }}">
+        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 0 0-1.41 12.85 12.85 0 0 0-1.41 1.41l-1.29 1.29a1 1 0 0 1-1.41 0 12.85 12.85 0 0 0 1.41-1.41l-2.2-2.2a15.05 15.05 0 0 0-6.59-6.59c0 .39.04.78.11 1.15l-2.91 2.91a1 1 0 1 1-1.41-1.41 12.93 12.93 0 0 1 1.37-1.37l.87-.87a1 1 0 0 1 1.41 0l1.68 1.68a1 1 0 0 1 0 1.41l-2.9 2.9a15 15 0 0 0-1.15.11z" fill="currentColor"/>
+        </svg>
+        <span>{{ item.value }}</span>
+      </a>
+      {% elif item.type == 'email' %}
+      <a href="mailto:{{ item.value }}" class="contact-link" aria-label="Email {{ item.value }}">
+        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V4l8 5 8-5v4z" fill="currentColor"/>
+        </svg>
+        <span>{{ item.value }}</span>
+      </a>
+      {% elif item.type == 'link' %}
+      <a href="{{ item.value }}" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="{{ item.label }} — opens in new tab">
+        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>{{ item.label }}</span>
+      </a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<style>
+  .contact-section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 480px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--fg);
+    font-size: 0.9375rem;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    width: 100%;
+  }
+
+  .contact-link:hover {
+    background: var(--border);
+    border-color: var(--accent);
+  }
+
+  .contact-link:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  .contact-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+
+  .contact-link span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>

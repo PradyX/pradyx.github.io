@@ -1,0 +1,30 @@
+{# --- Summary --- #}
+<section class="summary-section" aria-labelledby="summary-heading">
+  <h2 id="summary-heading" class="section-heading">About</h2>
+  <div class="summary-card">
+    {{ portfolio.summary | safe }}
+  </div>
+</section>
+
+<style>
+  .summary-section {
+    padding: 2.5rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-heading {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+  }
+
+  .summary-card {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--fg);
+  }
+</style>

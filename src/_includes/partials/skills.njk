@@ -1,0 +1,65 @@
+{# --- Skills --- #}
+<section class="skills-section" aria-labelledby="skills-heading">
+  <h2 id="skills-heading" class="section-heading">Skills</h2>
+  <div class="skills-container" role="list">
+    {% for group in portfolio.skills %}
+    <div class="skill-group" role="listitem">
+      <h3 class="skill-group-title">{{ group.name }}</h3>
+      <div class="skill-tags">
+        {% for skill in group.skills %}
+        <span class="skill-tag" role="listitem">{{ skill }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .skills-section {
+    padding: 2.5rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .skill-group {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.125rem;
+  }
+
+  .skill-group-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--skill-cat-fg);
+    margin: 0 0 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: var(--skill-cat-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+
+  .skill-tag {
+    font-size: 0.8125rem;
+    color: var(--skill-cat-fg);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.5rem;
+    white-space: nowrap;
+  }
+</style>

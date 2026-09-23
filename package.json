@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "PradyX portfolio — Eleventy static site",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "watch": "eleventy --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "PradyX",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "pdfkit": "^0.16.0"
+  }
+}

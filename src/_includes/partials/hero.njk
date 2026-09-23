@@ -1,0 +1,94 @@
+{# --- Hero --- #}
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <h1 id="hero-heading" class="hero-name">{{ portfolio.meta.name | default("Pradyumn Bhushan") }}</h1>
+    <p class="hero-tagline">{{ portfolio.meta.tagline | default("Android Application Developer") }}</p>
+    <a
+      href="/assets/pradyx-cv.pdf"
+      class="cv-download"
+      download="PradyX-CV.pdf"
+      data-cv-btn
+      aria-label="Download CV as PDF"
+    >
+      <svg class="cv-download-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"
+          fill="currentColor"
+        />
+        <path
+          d="M14 2v6h6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <span>Download CV</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 4rem 1.25rem 3rem;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .hero-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 800;
+    color: var(--fg);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-tagline {
+    font-size: 1.125rem;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .cv-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin-top: 1.75rem;
+    padding: 0.625rem 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--fg);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .cv-download:hover {
+    background: var(--border);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .cv-download:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  .cv-download-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+</style>
