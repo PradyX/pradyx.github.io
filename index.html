@@ -13,7 +13,7 @@
         // A theme manually chosen in the switcher is kept for the tab session.
         // Keep this list in sync with the data-theme-option buttons in the body.
         (function () {
-            var themes = ['midnight', 'aurora', 'paper', 'terminal', 'ocean', 'sakura', 'ember', 'nord', 'apex', 'cyberpunk', 'synthwave', 'vaporwave'];
+            var themes = ['midnight', 'aurora', 'paper', 'terminal', 'ocean', 'sakura', 'ember', 'nord', 'apex', 'cyberpunk', 'synthwave', 'vaporwave', 'dracula', 'catppuccin', 'gruvbox', 'tokyo', 'evergreen', 'royal'];
             var theme = null;
             try {
                 theme = sessionStorage.getItem('portfolio-theme');
@@ -88,6 +88,24 @@
             <button type="button" class="theme-swatch" data-theme-option="vaporwave" aria-pressed="false">
                 <span class="swatch swatch-vaporwave" aria-hidden="true"></span>Vaporwave
             </button>
+            <button type="button" class="theme-swatch" data-theme-option="dracula" aria-pressed="false">
+                <span class="swatch swatch-dracula" aria-hidden="true"></span>Dracula
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="catppuccin" aria-pressed="false">
+                <span class="swatch swatch-catppuccin" aria-hidden="true"></span>Catppuccin
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="gruvbox" aria-pressed="false">
+                <span class="swatch swatch-gruvbox" aria-hidden="true"></span>Gruvbox
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="tokyo" aria-pressed="false">
+                <span class="swatch swatch-tokyo" aria-hidden="true"></span>Tokyo Night
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="evergreen" aria-pressed="false">
+                <span class="swatch swatch-evergreen" aria-hidden="true"></span>Evergreen
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="royal" aria-pressed="false">
+                <span class="swatch swatch-royal" aria-hidden="true"></span>Royal
+            </button>
             <button type="button" class="theme-swatch theme-swatch-random" data-theme-random>
                 <span class="swatch swatch-random" aria-hidden="true"></span>Random
             </button>
@@ -161,8 +179,14 @@
             <img src="images/art-aurora.svg" alt="">
             <img src="images/art-circuit.svg" alt="">
             <img src="images/art-orbs.svg" alt="">
-            <img src="images/art-bars.svg" alt="">
             <img src="images/art-contours.svg" alt="">
+            <!-- Locally authored skill-themed background artwork. -->
+            <img src="images/art-droid.svg" alt="">
+            <img src="images/art-chip.svg" alt="">
+            <img src="images/art-code.svg" alt="">
+            <img src="images/art-neural.svg" alt="">
+            <img src="images/art-layers.svg" alt="">
+            <img src="images/art-gears.svg" alt="">
         </div>
 
         <!-- <nav class="slides-navigation">

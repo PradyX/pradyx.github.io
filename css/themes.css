@@ -16,6 +16,12 @@
      cyberpunk - neon yellow/pink on deep violet (Orbitron + mono)
      synthwave - hot pink/orange on deep purple
      vaporwave - pastel light with fuchsia/cyan
+     dracula   - classic Dracula purple/pink/cyan on slate
+     catppuccin- Catppuccin Mocha mauve/teal on dark plum
+     gruvbox   - retro groove yellow/orange (mono type)
+     tokyo     - Tokyo Night blue/purple on deep indigo
+     evergreen - deep forest green with lime/amber
+     royal     - black with gold luxury accents
    ============================================================ */
 
 html[data-theme="midnight"] {
@@ -412,4 +418,208 @@ html[data-theme="vaporwave"] {
   --theme-color: #f6eefc;
 
   --page-dim: 0.72;
+}
+
+html[data-theme="dracula"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #282a36;
+  --bg-soft: #2d3041;
+  --surface: rgba(189, 147, 249, 0.08);
+  --surface-2: rgba(255, 121, 198, 0.10);
+  --border: rgba(189, 147, 249, 0.16);
+  --border-strong: rgba(255, 121, 198, 0.34);
+
+  --text: #f8f8f2;
+  --text-soft: #c9c9e0;
+  --text-faint: #8b93c4;
+
+  --accent: #bd93f9;
+  --accent-2: #8be9fd;
+  --accent-contrast: #21222c;
+  --gradient: linear-gradient(135deg, #bd93f9, #ff79c6);
+  --ring: #ff79c6;
+
+  --nav-bg: rgba(40, 42, 54, 0.84);
+  --overlay: rgba(24, 26, 36, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(20, 21, 30, 0.92));
+  --tile-bg: #343746;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.32);
+  --shadow-lift: 0 22px 48px rgba(189, 147, 249, 0.20);
+
+  --theme-color: #282a36;
+
+  --page-dim: 0.56;
+}
+
+html[data-theme="catppuccin"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #1e1e2e;
+  --bg-soft: #252538;
+  --surface: rgba(203, 166, 247, 0.08);
+  --surface-2: rgba(148, 226, 213, 0.10);
+  --border: rgba(203, 166, 247, 0.16);
+  --border-strong: rgba(203, 166, 247, 0.32);
+
+  --text: #cdd6f4;
+  --text-soft: #a6adc8;
+  --text-faint: #7f849c;
+
+  --accent: #cba6f7;
+  --accent-2: #94e2d5;
+  --accent-contrast: #1e1e2e;
+  --gradient: linear-gradient(135deg, #cba6f7, #f5c2e7);
+  --ring: #f5c2e7;
+
+  --nav-bg: rgba(30, 30, 46, 0.84);
+  --overlay: rgba(17, 17, 27, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(17, 17, 27, 0.92));
+  --tile-bg: #2a2a40;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.30);
+  --shadow-lift: 0 22px 48px rgba(203, 166, 247, 0.18);
+
+  --theme-color: #1e1e2e;
+
+  --page-dim: 0.55;
+}
+
+html[data-theme="gruvbox"] {
+  --font-heading: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --font-body: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --bg: #282828;
+  --bg-soft: #32302f;
+  --surface: rgba(250, 189, 47, 0.07);
+  --surface-2: rgba(254, 128, 25, 0.10);
+  --border: rgba(250, 189, 47, 0.16);
+  --border-strong: rgba(254, 128, 25, 0.34);
+
+  --text: #ebdbb2;
+  --text-soft: #d5c4a1;
+  --text-faint: #a89984;
+
+  --accent: #fabd2f;
+  --accent-2: #fe8019;
+  --accent-contrast: #282828;
+  --gradient: linear-gradient(135deg, #fabd2f, #fe8019);
+  --ring: #fabd2f;
+
+  --nav-bg: rgba(40, 40, 40, 0.84);
+  --overlay: rgba(20, 20, 20, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(20, 20, 20, 0.92));
+  --tile-bg: #3c3836;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 22px 48px rgba(254, 128, 25, 0.20);
+
+  --theme-color: #282828;
+
+  --page-dim: 0.58;
+}
+
+html[data-theme="tokyo"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #1a1b26;
+  --bg-soft: #202232;
+  --surface: rgba(122, 162, 247, 0.07);
+  --surface-2: rgba(187, 154, 247, 0.10);
+  --border: rgba(122, 162, 247, 0.16);
+  --border-strong: rgba(122, 162, 247, 0.32);
+
+  --text: #c0caf5;
+  --text-soft: #a9b1d6;
+  --text-faint: #737aa2;
+
+  --accent: #7aa2f7;
+  --accent-2: #bb9af7;
+  --accent-contrast: #16161e;
+  --gradient: linear-gradient(135deg, #7aa2f7, #bb9af7);
+  --ring: #7aa2f7;
+
+  --nav-bg: rgba(26, 27, 38, 0.84);
+  --overlay: rgba(12, 13, 22, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(12, 13, 22, 0.92));
+  --tile-bg: #24283b;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.32);
+  --shadow-lift: 0 22px 48px rgba(122, 162, 247, 0.20);
+
+  --theme-color: #1a1b26;
+
+  --page-dim: 0.55;
+}
+
+html[data-theme="evergreen"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #0b1f14;
+  --bg-soft: #102a1b;
+  --surface: rgba(74, 222, 128, 0.06);
+  --surface-2: rgba(251, 191, 36, 0.08);
+  --border: rgba(74, 222, 128, 0.16);
+  --border-strong: rgba(74, 222, 128, 0.32);
+
+  --text: #e7f6ec;
+  --text-soft: #b3d8c0;
+  --text-faint: #7fa98d;
+
+  --accent: #4ade80;
+  --accent-2: #fbbf24;
+  --accent-contrast: #06170e;
+  --gradient: linear-gradient(135deg, #34d399, #a3e635);
+  --ring: #86efac;
+
+  --nav-bg: rgba(11, 31, 20, 0.82);
+  --overlay: rgba(5, 18, 11, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(5, 18, 11, 0.92));
+  --tile-bg: #14351f;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 22px 48px rgba(52, 211, 153, 0.18);
+
+  --theme-color: #0b1f14;
+
+  --page-dim: 0.58;
+}
+
+html[data-theme="royal"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #0c0a09;
+  --bg-soft: #141110;
+  --surface: rgba(245, 158, 11, 0.06);
+  --surface-2: rgba(245, 158, 11, 0.11);
+  --border: rgba(245, 158, 11, 0.16);
+  --border-strong: rgba(245, 158, 11, 0.36);
+
+  --text: #f7f3ea;
+  --text-soft: #d6c9ae;
+  --text-faint: #a2937a;
+
+  --accent: #f59e0b;
+  --accent-2: #fde68a;
+  --accent-contrast: #141005;
+  --gradient: linear-gradient(135deg, #f59e0b, #fde68a);
+  --ring: #fcd34d;
+
+  --nav-bg: rgba(12, 10, 9, 0.84);
+  --overlay: rgba(8, 6, 5, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(8, 6, 5, 0.92));
+  --tile-bg: #1c1815;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.38);
+  --shadow-lift: 0 22px 48px rgba(245, 158, 11, 0.18);
+
+  --theme-color: #0c0a09;
+
+  --page-dim: 0.58;
 }

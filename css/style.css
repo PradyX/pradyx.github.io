@@ -1224,6 +1224,30 @@ h1, h2, h3, h4 {
   background: linear-gradient(135deg, #f6eefc, #c026d3);
 }
 
+.swatch-dracula {
+  background: linear-gradient(135deg, #282a36, #bd93f9);
+}
+
+.swatch-catppuccin {
+  background: linear-gradient(135deg, #1e1e2e, #cba6f7);
+}
+
+.swatch-gruvbox {
+  background: linear-gradient(135deg, #282828, #fabd2f);
+}
+
+.swatch-tokyo {
+  background: linear-gradient(135deg, #1a1b26, #7aa2f7);
+}
+
+.swatch-evergreen {
+  background: linear-gradient(135deg, #0b1f14, #4ade80);
+}
+
+.swatch-royal {
+  background: linear-gradient(135deg, #0c0a09, #f59e0b);
+}
+
 .theme-swatch-random {
   border-top: 1px solid var(--border);
   border-radius: 0 0 10px 10px;

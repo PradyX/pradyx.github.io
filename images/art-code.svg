@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="cd-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#150b2e"/>
+      <stop offset="1" stop-color="#241245"/>
+    </linearGradient>
+    <linearGradient id="cd-panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1a52"/>
+      <stop offset="1" stop-color="#1c1038"/>
+    </linearGradient>
+    <linearGradient id="cd-bracket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="cd-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#cd-bg)"/>
+  <!-- back editor panel -->
+  <g transform="translate(240 180) rotate(-4)">
+    <rect width="620" height="380" rx="26" fill="url(#cd-panel)" stroke="#6d4bd8" stroke-width="4" opacity="0.85"/>
+    <g fill="#a78bfa">
+      <circle cx="46" cy="46" r="12" opacity="0.9"/><circle cx="86" cy="46" r="12" opacity="0.6"/><circle cx="126" cy="46" r="12" opacity="0.35"/>
+    </g>
+    <g stroke="#8b6ee8" stroke-width="16" stroke-linecap="round" opacity="0.55">
+      <path d="M46 118 H360"/><path d="M46 172 H260"/><path d="M46 226 H420"/><path d="M46 280 H300"/><path d="M46 334 H210"/>
+    </g>
+  </g>
+  <!-- front editor panel -->
+  <g transform="translate(760 340) rotate(3)">
+    <rect width="640" height="400" rx="26" fill="url(#cd-panel)" stroke="#f472b6" stroke-width="4" opacity="0.9"/>
+    <g fill="#f472b6">
+      <circle cx="48" cy="48" r="12" opacity="0.9"/><circle cx="88" cy="48" r="12" opacity="0.6"/><circle cx="128" cy="48" r="12" opacity="0.35"/>
+    </g>
+    <g stroke="#e879b8" stroke-width="16" stroke-linecap="round" opacity="0.55">
+      <path d="M48 124 H400"/><path d="M48 182 H280"/><path d="M48 240 H460"/><path d="M48 298 H330"/><path d="M48 356 H240"/>
+    </g>
+    <rect x="500" y="170" width="14" height="58" rx="7" fill="#f472b6"/>
+  </g>
+  <!-- big glowing code symbol -->
+  <g stroke="url(#cd-bracket)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#cd-glow)" opacity="0.8">
+    <path d="M560 430 L440 540 L560 650"/>
+    <path d="M1040 430 L1160 540 L1040 650"/>
+    <path d="M900 380 L700 700"/>
+  </g>
+  <g stroke="url(#cd-bracket)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M560 430 L440 540 L560 650"/>
+    <path d="M1040 430 L1160 540 L1040 650"/>
+    <path d="M900 380 L700 700"/>
+  </g>
+  <!-- floating tokens -->
+  <g fill="#a78bfa" opacity="0.8">
+    <rect x="140" y="700" width="120" height="18" rx="9"/>
+    <rect x="140" y="740" width="72" height="18" rx="9"/>
+    <rect x="1330" y="120" width="120" height="18" rx="9"/>
+    <rect x="1330" y="160" width="80" height="18" rx="9"/>
+    <circle cx="240" cy="120" r="10"/><circle cx="1420" cy="800" r="10"/>
+  </g>
+</svg>

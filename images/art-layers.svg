@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="ly-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1526"/>
+      <stop offset="1" stop-color="#141033"/>
+    </linearGradient>
+    <linearGradient id="ly-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="ly-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="ly-3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="ly-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#ly-bg)"/>
+  <ellipse cx="800" cy="700" rx="520" ry="120" fill="#6366f1" opacity="0.18" filter="url(#ly-glow)"/>
+  <!-- isometric stacked plates -->
+  <g transform="translate(800 640)">
+    <path d="M-420 0 L0 -210 L420 0 L0 210 Z" fill="url(#ly-1)" opacity="0.9"/>
+    <path d="M-420 0 L0 210 L420 0 L0 -210 Z" fill="none" stroke="#93c5fd" stroke-width="4" opacity="0.8"/>
+  </g>
+  <g transform="translate(800 460)">
+    <path d="M-360 0 L0 -180 L360 0 L0 180 Z" fill="url(#ly-2)" opacity="0.88"/>
+    <path d="M-360 0 L0 180 L360 0 L0 -180 Z" fill="none" stroke="#d8b4fe" stroke-width="4" opacity="0.8"/>
+  </g>
+  <g transform="translate(800 300)">
+    <path d="M-290 0 L0 -145 L290 0 L0 145 Z" fill="url(#ly-3)" opacity="0.9"/>
+    <path d="M-290 0 L0 145 L290 0 L0 -145 Z" fill="none" stroke="#a5f3fc" stroke-width="4" opacity="0.8"/>
+  </g>
+  <!-- data dots traveling between layers -->
+  <g fill="#e0f2fe">
+    <circle cx="800" cy="380" r="12" opacity="0.9"/>
+    <circle cx="800" cy="550" r="12" opacity="0.7"/>
+    <circle cx="800" cy="720" r="12" opacity="0.5"/>
+  </g>
+  <g stroke="#bae6fd" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round" opacity="0.8">
+    <path d="M800 300 V380"/><path d="M800 460 V550"/><path d="M800 640 V720"/>
+  </g>
+  <!-- side modules -->
+  <g opacity="0.85">
+    <rect x="180" y="220" width="150" height="150" rx="26" fill="none" stroke="#38bdf8" stroke-width="5"/>
+    <rect x="215" y="255" width="80" height="12" rx="6" fill="#38bdf8"/>
+    <rect x="215" y="285" width="56" height="12" rx="6" fill="#38bdf8" opacity="0.6"/>
+    <rect x="215" y="315" width="68" height="12" rx="6" fill="#38bdf8" opacity="0.4"/>
+    <rect x="1270" y="520" width="150" height="150" rx="26" fill="none" stroke="#c084fc" stroke-width="5"/>
+    <rect x="1305" y="555" width="80" height="12" rx="6" fill="#c084fc"/>
+    <rect x="1305" y="585" width="56" height="12" rx="6" fill="#c084fc" opacity="0.6"/>
+    <rect x="1305" y="615" width="68" height="12" rx="6" fill="#c084fc" opacity="0.4"/>
+  </g>
+  <g fill="#93c5fd" opacity="0.7">
+    <circle cx="380" cy="620" r="5"/><circle cx="1220" cy="220" r="5"/><circle cx="520" cy="150" r="4"/>
+    <circle cx="1120" cy="780" r="4"/><circle cx="150" cy="450" r="4"/><circle cx="1450" cy="350" r="4"/>
+  </g>
+</svg>

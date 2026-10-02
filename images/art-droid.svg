@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="dr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071827"/>
+      <stop offset="1" stop-color="#0b2c3c"/>
+    </linearGradient>
+    <linearGradient id="dr-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="dr-phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="dr-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dr-bg)"/>
+  <circle cx="480" cy="430" r="320" fill="#2dd4bf" opacity="0.10" filter="url(#dr-glow)"/>
+  <circle cx="1180" cy="520" r="280" fill="#3b82f6" opacity="0.12" filter="url(#dr-glow)"/>
+  <!-- generic robot head -->
+  <g transform="translate(360 260)">
+    <rect x="-60" y="-120" width="8" height="60" rx="4" fill="#2dd4bf" transform="rotate(-28 -56 -90)"/>
+    <rect x="52" y="-120" width="8" height="60" rx="4" fill="#2dd4bf" transform="rotate(28 56 -90)"/>
+    <circle cx="-72" cy="-126" r="12" fill="#2dd4bf"/>
+    <circle cx="72" cy="-126" r="12" fill="#2dd4bf"/>
+    <rect x="-150" y="-90" width="300" height="220" rx="80" fill="url(#dr-face)" opacity="0.92"/>
+    <rect x="-150" y="-90" width="300" height="220" rx="80" fill="none" stroke="#7dd3fc" stroke-width="5" opacity="0.7"/>
+    <rect x="-92" y="-24" width="64" height="34" rx="17" fill="#06222e"/>
+    <rect x="28" y="-24" width="64" height="34" rx="17" fill="#06222e"/>
+    <rect x="-70" y="58" width="140" height="14" rx="7" fill="#06222e" opacity="0.85"/>
+    <rect x="-190" y="-30" width="34" height="110" rx="17" fill="#2dd4bf" opacity="0.8"/>
+    <rect x="156" y="-30" width="34" height="110" rx="17" fill="#2dd4bf" opacity="0.8"/>
+  </g>
+  <!-- phone with app grid -->
+  <g transform="translate(1130 220) rotate(8)">
+    <rect x="-160" y="-230" width="320" height="520" rx="46" fill="#0a2233" stroke="url(#dr-phone)" stroke-width="10"/>
+    <rect x="-120" y="-186" width="240" height="432" rx="18" fill="#0d2c42"/>
+    <g fill="#38bdf8">
+      <rect x="-96" y="-160" width="88" height="88" rx="20" opacity="0.9"/>
+      <rect x="8" y="-160" width="88" height="88" rx="20" opacity="0.6"/>
+      <rect x="-96" y="-52" width="88" height="88" rx="20" opacity="0.6"/>
+      <rect x="8" y="-52" width="88" height="88" rx="20" opacity="0.9"/>
+      <rect x="-96" y="56" width="88" height="88" rx="20" opacity="0.9"/>
+      <rect x="8" y="56" width="88" height="88" rx="20" opacity="0.6"/>
+    </g>
+    <rect x="-60" y="196" width="120" height="12" rx="6" fill="#38bdf8" opacity="0.7"/>
+  </g>
+  <!-- floating UI chips -->
+  <g fill="none" stroke="#7dd3fc" stroke-width="5" opacity="0.65">
+    <rect x="180" y="700" width="180" height="64" rx="20"/>
+    <rect x="430" y="760" width="120" height="64" rx="20"/>
+    <rect x="1120" y="120" width="150" height="56" rx="18"/>
+  </g>
+  <g fill="#2dd4bf" opacity="0.8">
+    <circle cx="820" cy="120" r="10"/><circle cx="920" cy="200" r="7"/><circle cx="760" cy="820" r="9"/>
+    <circle cx="1420" cy="760" r="10"/><circle cx="1520" cy="640" r="7"/><circle cx="240" cy="180" r="8"/>
+  </g>
+</svg>
