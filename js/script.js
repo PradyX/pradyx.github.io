@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Android Developer", "Kernel Developer", "Student"],
+        strings: ["Mobile Application Developer", "AOSP | Kotlin | Java | Flutter", "Custom ROM and Kernel Development"],
         typeSpeed: 50,
         loop: true,
         startDelay: 400,
@@ -110,6 +110,9 @@ $(document).ready(function () {
 
 });
 
-document.querySelector('#blog-link').addEventListener('click', () => {
-    window.location = 'https://www.vipuljha.com/blog';
-})
+const blogLink = document.querySelector('#blog-link');
+if (blogLink) {
+    blogLink.addEventListener('click', () => {
+        window.location = blogLink.href;
+    });
+}

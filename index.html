@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-    <title>Pradyumn Bhushan</title>
+    <meta charset="UTF-8">
+    <title>Pradyumn Bhushan | Mobile Application Developer</title>
     <link rel="shortcut icon" type="image/png" href="images/icons/fevicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content=#000000>
     <meta name="description"
-        content="Pradyumn Bhushan aka Prady is an Android Kernel/ROM/App developer. He is passionate about programming and building helpful tools.">
+        content="Mobile application developer with around 4 years of experience in Kotlin, Java, Flutter, and AOSP custom ROM and kernel development.">
     <meta name="keywords"
-        content="android, android developer, pradyx, flixify, unified_kernel_sdm660, shell, scripts, raspicheck">
+        content="Pradyumn Bhushan, Android, Kotlin, Java, Flutter, AOSP, MVVM, llama.cpp">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -46,6 +47,12 @@
                     <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
@@ -53,6 +60,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume-projects">More Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -83,7 +93,7 @@
         <div class="TitleMessage">
             <div class="heading">
                 <p class="main">Pradyumn Bhushan</p>
-                <p class="sub typed"></p>
+                <p class="sub typed">AOSP | Kotlin | Java | Flutter</p>
             </div>
         </div>
 
@@ -96,119 +106,198 @@
 
     <section id="about" class="about_profile">
         <div class="container">
-            <img class="aboutImage" src="images/profile.jpg" alt="">
+            <img class="aboutImage" src="images/profile.jpg" alt="Pradyumn Bhushan">
         </div>
         <div class="heading">
             <h1>Pradyumn Bhushan</h1>
         </div>
         <div class="sub_heading">
-            <h5>Software Developer</h5>
+            <h5>Mobile Application Developer</h5>
         </div>
         <div class="resume">
-            <a href="files/resume.pdf" target="_blank" class="resumeButton">DOWNLOAD RESUME</a>
-        </div>
+            <a href="files/resume.pdf" target="_blank" rel="noopener noreferrer" class="resumeButton">DOWNLOAD RESUME</a>
         </div>
     </section>
     <section class="about_text">
         <div class="container">
             <h3>Hey there,</h3>
-            <p class="about_para">This is Pradyumn Bhushan from Lucknow, India. I am a developer who develops Apps,
-                Kernels, ROMs and Scripts.
-                Currently I am pursuing my <b>B. Voc. in Software development & e-Governance</b> from <b> <a
-                        href="http://npgc.in/" target="_blank">National Post Graduate College.</a> </b>
-                I am motivated & uses creative approach to solve a problem, always energetic and eager to learn new
-                skills.
-            </p>
-            <p class="about_para">In android after market developer community I am known as
-                <b>Prady</b>.
-                This is my <a href="https://github.com/PradyX/">GitHub</a> & my projects can be found there.
-            </p>
+            <p class="about_para">I'm a mobile application developer with around <b>4 years of experience</b>,
+                working primarily with <b>Kotlin, Java, and Flutter</b>. I've built and maintained production Android
+                applications using MVVM, Retrofit, Room, Firebase, and REST/SOAP APIs.</p>
+            <p class="about_para">I also have hands-on experience with AOSP-based custom ROM and kernel development
+                for Xiaomi Snapdragon 660 devices, including device trees, kernel customization, and Android platform
+                internals. I enjoy debugging complex issues, working close to the Android framework, and understanding
+                how the operating system interacts with applications and hardware.</p>
+            <div class="profile-contact" aria-label="Contact details">
+                <a href="mailto:pradyumnbhushan@gmail.com">pradyumnbhushan@gmail.com</a>
+                <a href="tel:+917080968720">+91-7080968720</a>
+                <a href="https://www.linkedin.com/in/pradyumn-bhushan-8b19a074/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
         </div>
     </section>
 
-    <div id="skills" class="skillsSection">
+    <section id="experience" class="resume-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <hr class="line" width="40%">
-                    <h2>TECHNICAL SKILLS</h2>
-                    <p>A representation of my proficiency in each skill</p>
-                </div>
+            <div class="section-heading">
+                <hr class="line" width="40%">
+                <h2>EXPERIENCE</h2>
+            </div>
+            <div class="experience-list">
+                <article class="experience-entry">
+                    <h3>Mobile Application Developer</h3>
+                    <p class="entry-company">AppX (Creator Economy Tech Pvt. Ltd.)</p>
+                    <p class="entry-period">Oct 2024 - Jan 2026</p>
+                    <ul class="contribution-list">
+                        <li>Developed and maintained a large-scale Android platform powering multiple white-label educational applications using a scalable multi-flavor Gradle architecture.</li>
+                        <li>Architected reusable BuildConfig feature flags and Gradle product flavors, enabling rapid client-specific customization from a shared codebase.</li>
+                        <li>Designed and implemented an Instagram Reels-style short video module using Android Media3 (ExoPlayer) with HLS streaming, autoplay, intelligent preloading, thumbnail caching, and RecyclerView player reuse.</li>
+                        <li>Optimized networking with Retrofit/OkHttp caching, DNS-over-HTTPS resolution, connection pooling, API error handling, and offline-first strategies.</li>
+                        <li>Customized and deployed client applications by managing branding, application IDs, API endpoints, deep links, feature toggles, and release configurations.</li>
+                        <li>Integrated and maintained Firebase Crashlytics, Analytics, Cloud Messaging, Realtime Database, and the Meta/Facebook SDK for monitoring, analytics, and monetization.</li>
+                        <li>Developed and optimized learning platform features including test series, solution pages, authentication, a PDF viewer, bookmarks, notifications, and production bug fixes.</li>
+                        <li>Collaborated with backend engineers, QA, and product teams on production releases, performance improvements, client-specific enhancements, and critical hotfixes.</li>
+                    </ul>
+                </article>
+                <article class="experience-entry">
+                    <h3>Android Application Developer</h3>
+                    <p class="entry-company">Sigma IT Softwares &amp; Designers Pvt. Ltd.</p>
+                    <p class="entry-period">Jul 2022 - Sep 2024</p>
+                    <ul class="contribution-list">
+                        <li>Delivered Android applications end-to-end, from requirement analysis and feature implementation through testing, Google Play Store publishing, and post-release maintenance.</li>
+                        <li>Integrated secure payment gateways, Google Maps, Firebase Crashlytics, Analytics, FCM, Realtime Database, push notifications, and background services across production applications.</li>
+                        <li>Built scalable Android applications using Kotlin, Java, MVVM, Retrofit, Android Jetpack, Coroutines, and REST APIs.</li>
+                        <li>Improved application stability by resolving production issues, optimizing API integrations, and enhancing application performance.</li>
+                        <li>Collaborated with cross-functional teams to deliver new features, client customizations, and timely production releases.</li>
+                    </ul>
+                </article>
+                <article class="experience-entry">
+                    <h3>Android Application Developer</h3>
+                    <p class="entry-company">Techdock Pvt. Ltd.</p>
+                    <p class="entry-period">Feb 2022 - Jul 2022</p>
+                    <ul class="contribution-list">
+                        <li>Developed Android applications using MVVM architecture with Kotlin and Java.</li>
+                        <li>Integrated Shopify GraphQL APIs for data-driven features and backend communication.</li>
+                        <li>Implemented Firebase Authentication and Realtime Database for secure user management and real-time synchronization.</li>
+                        <li>Contributed to UI implementation, API integration, bug fixing, and feature development in an Agile development environment.</li>
+                    </ul>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">JAVA
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color:#1df79a;width:100%"
-                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
+    <section id="education" class="resume-section">
+        <div class="container">
+            <div class="section-heading">
+                <hr class="line" width="40%">
+                <h2>EDUCATION</h2>
             </div>
-            <div class="col-md-6">Shell
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color:#f46cb7;width: 100%;"
-                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">HTML/CSS
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color: #00a0fd;width: 70%;"
-                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
-            </div>
-            <div class="col-md-6">C/C++
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color:#e2732d;width: 50%"
-                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
+            <div class="education-grid">
+                <article class="education-entry">
+                    <h3>MCA (Masters in Computer Application)</h3>
+                    <p class="entry-company">Shri Ramswaroop Memorial Group of Professional Colleges (SRMGPC)</p>
+                    <p class="entry-period">2020 - 2022</p>
+                </article>
+                <article class="education-entry">
+                    <h3>B.VOC (Software Development &amp; E-Governance)</h3>
+                    <p class="entry-company">National Post Graduate College (NPGC)</p>
+                    <p class="entry-period">2017 - 2020</p>
+                </article>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">Kotlin
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color:#df3d3d;width: 100%"
-                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
+    </section>
+
+    <section id="skills" class="skillsSection">
+        <div class="container">
+            <div class="section-heading">
+                <hr class="line" width="40%">
+                <h2>TECHNICAL SKILLS</h2>
+                <p>Languages, frameworks, and tools from my application and platform development work.</p>
             </div>
-            <div class="col-md-6">Flutter
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color:#a06cf4;width: 50%"
-                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
+            <div class="skills-grid">
+                <article class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="skill-tags">
+                        <li>Kotlin</li>
+                        <li>Java</li>
+                        <li>Dart</li>
+                    </ul>
+                </article>
+                <article class="skill-group">
+                    <h3>Mobile Development</h3>
+                    <ul class="skill-tags">
+                        <li>Flutter</li>
+                        <li>Android SDK</li>
+                        <li>Jetpack</li>
+                        <li>MVVM</li>
+                        <li>Coroutines</li>
+                        <li>RoomDB</li>
+                        <li>Media3 (ExoPlayer)</li>
+                    </ul>
+                </article>
+                <article class="skill-group">
+                    <h3>APIs &amp; Integrations</h3>
+                    <ul class="skill-tags">
+                        <li>Retrofit</li>
+                        <li>OkHttp</li>
+                        <li>REST/SOAP APIs</li>
+                        <li>Shopify GraphQL</li>
+                        <li>Google Maps</li>
+                        <li>Payment gateways</li>
+                    </ul>
+                </article>
+                <article class="skill-group">
+                    <h3>Cloud &amp; Services</h3>
+                    <ul class="skill-tags">
+                        <li>Firebase</li>
+                        <li>GCP</li>
+                        <li>FCM</li>
+                        <li>Crashlytics</li>
+                        <li>Firebase Analytics</li>
+                        <li>Firebase Authentication</li>
+                        <li>Realtime Database</li>
+                        <li>Meta Ads</li>
+                        <li>Meta/Facebook SDK</li>
+                        <li>AdMob</li>
+                    </ul>
+                </article>
+                <article class="skill-group">
+                    <h3>AOSP &amp; Local AI</h3>
+                    <ul class="skill-tags">
+                        <li>AOSP</li>
+                        <li>Custom ROMs</li>
+                        <li>Kernel development</li>
+                        <li>Device trees</li>
+                        <li>Android platform internals</li>
+                        <li>AI/LLMs</li>
+                        <li>llama.cpp</li>
+                        <li>GGUF models</li>
+                    </ul>
+                </article>
+                <article class="skill-group">
+                    <h3>Tools &amp; Publishing</h3>
+                    <ul class="skill-tags">
+                        <li>Git</li>
+                        <li>Linux</li>
+                        <li>Shell</li>
+                        <li>Docker</li>
+                        <li>YAML</li>
+                        <li>CI/CD</li>
+                        <li>Gradle</li>
+                        <li>Google Play Store publishing</li>
+                        <li>App Store publishing</li>
+                    </ul>
+                </article>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">Python
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color:#eff317;width: 45%"
-                        aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
-            </div>
-            <div class="col-md-6">C#
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="background-color:#17f329;width: 50%"
-                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br>
-            </div>
-        </div>
-        <!-- Python
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color:rgba(255, 63, 63, 0.82);width: 45%"
-                aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-        </div> <br> -->
-        <br><br>
-    </div>
+    </section>
+
     <div id="stats" class="statsSection">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <hr class="line" width="40%">
                     <h2>PERSONAL STATS</h2>
-                    <p>Some stats related to my experience and projects.</p>
+                    <p>Experience and qualifications from my resume.</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="squareItem">
@@ -217,8 +306,8 @@
                                 <i class="fas fa-terminal"></i>
                             </div>
                             <div class="squareContent">
-                                <h2> <span class="counter">20</span><span>+</span></h2>
-                                <h3>Shell Scripts</h3>
+                                <h2><span>~</span><span class="counter">4</span></h2>
+                                <h3>Years in Mobile Development</h3>
                             </div>
                         </div>
                     </div>
@@ -230,8 +319,8 @@
                                 <i class="fab fa-android"></i>
                             </div>
                             <div class="squareContent">
-                                <h2><span class="counter">10</span><span>+</span></h2>
-                                <h3>Android Projects</h3>
+                                <h2><span class="counter">3</span></h2>
+                                <h3>Companies</h3>
                             </div>
                         </div>
                     </div>
@@ -243,8 +332,8 @@
                                 <i class="fas fa-download"></i>
                             </div>
                             <div class="squareContent">
-                                <h2> <span class="counter">200</span><span>K+</span></h2>
-                                <h3>Downloads</h3>
+                                <h2><span class="counter">10</span><span>M+</span></h2>
+                                <h3>Rojgar With Ankit Downloads</h3>
                             </div>
                         </div>
                     </div>
@@ -257,7 +346,7 @@
                             </div>
                             <div class="squareContent">
                                 <h2 class="counter">2</h2>
-                                <h3>Websites</h3>
+                                <h3>Qualifications</h3>
                             </div>
                         </div>
                     </div>
@@ -525,27 +614,139 @@
         </div>
     </div>
 
+    <!-- Resume-backed additions. The original portfolio gallery above is preserved. -->
+    <section id="resume-projects" class="resume-section">
+        <div class="container">
+            <div class="section-heading">
+                <hr class="line" width="40%">
+                <h2>MORE PROJECTS</h2>
+                <p>Production applications and platform work from my resume.</p>
+            </div>
+            <div class="resume-project-grid">
+                <article class="resume-project-card">
+                    <h3>India&#x27;s Got Latent</h3>
+                    <p class="project-downloads">500K+ downloads</p>
+                    <p class="resume-project-description">Official app of Samay Raina featuring exclusive comedy content, shows, and talent-driven entertainment.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.umdeos.bdwjdx" target="_blank" rel="noopener noreferrer" aria-label="India&#x27;s Got Latent - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>UPSTDC: Hotels, Tour Package Booking</h3>
+                    <p class="project-downloads">50K+ downloads</p>
+                    <p class="resume-project-description">Government-focused Android application for booking hotels.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=live.app.upstdconline" target="_blank" rel="noopener noreferrer" aria-label="UPSTDC: Hotels, Tour Package Booking - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Jal Jeevan Mission: Grievance Redressal System</h3>
+                    <p class="project-downloads">10K+ downloads</p>
+                    <p class="resume-project-description">Government-focused Android application for complaint tracking and grievance management.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.app.jalsamadhan" target="_blank" rel="noopener noreferrer" aria-label="Jal Jeevan Mission: Grievance Redressal System - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Pocket LLM</h3>
+                    <p class="resume-project-description">App enabling fully on-device LLM chat using GGUF models and llama.cpp.</p>
+                    <div class="resume-project-links">
+                        <a href="https://github.com/PradyX/pocket_llm" target="_blank" rel="noopener noreferrer" aria-label="Pocket LLM - GitHub">GitHub <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Rojgar With Ankit (RWA)</h3>
+                    <p class="project-downloads">10M+ downloads</p>
+                    <p class="resume-project-description">Competitive exam preparation platform providing extensive study content, weekly tests, and performance tracking for aspirants in SSC, police, banking, and other government exams.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.appx.rojgar_with_ankit" target="_blank" rel="noopener noreferrer" aria-label="Rojgar With Ankit (RWA) - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>RBE Revolution By Education</h3>
+                    <p class="project-downloads">500K+ downloads</p>
+                    <p class="resume-project-description">Education app offering structured learning content for students.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.revolution.education" target="_blank" rel="noopener noreferrer" aria-label="RBE Revolution By Education - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Kaxa: Learn Via Short Videos</h3>
+                    <p class="project-downloads">1K+ downloads</p>
+                    <p class="resume-project-description">Android app focused on short-form educational video content.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.kaxa.app" target="_blank" rel="noopener noreferrer" aria-label="Kaxa: Learn Via Short Videos - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Test Pass</h3>
+                    <p class="project-downloads">1M+ downloads</p>
+                    <p class="resume-project-description">A comprehensive exam preparation app offering category-wise practice tests for major competitive exams in India.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.speedycurrent.speedycurrentaffairs2019" target="_blank" rel="noopener noreferrer" aria-label="Test Pass - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Banking Mitra: Mobile Recharge, BBPS Bill Payment</h3>
+                    <p class="project-downloads">10K+ downloads</p>
+                    <p class="resume-project-description">A digital banking platform enabling retailers to offer Aadhaar ATM, bill payments, and essential financial services.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.payment.bankingmitra" target="_blank" rel="noopener noreferrer" aria-label="Banking Mitra: Mobile Recharge, BBPS Bill Payment - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>AppX Admin</h3>
+                    <p class="project-downloads">10K+ downloads</p>
+                    <p class="resume-project-description">Companion admin application for managing student profiles, enrollments, attendance, and educational content across the AppX ecosystem.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.appx.admin&amp;hl=en_IN" target="_blank" rel="noopener noreferrer" aria-label="AppX Admin - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Chandan Logics</h3>
+                    <p class="project-downloads">500K+ downloads</p>
+                    <p class="resume-project-description">App designed in a structured manner to assist preparation for various examinations.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=co.jarvis.clog" target="_blank" rel="noopener noreferrer" aria-label="Chandan Logics - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Apni Padhai</h3>
+                    <p class="project-downloads">500K+ downloads</p>
+                    <p class="resume-project-description">An online platform for full preparation for competitive exams.</p>
+                    <div class="resume-project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.aapni.padhai" target="_blank" rel="noopener noreferrer" aria-label="Apni Padhai - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <article class="resume-project-card">
+                    <h3>Xiaomi-sdm660 Custom OS Development</h3>
+                    <p class="project-downloads">10K+ downloads</p>
+                    <p class="resume-project-description">Device tree maintainer with hands-on experience in AOSP-based custom OS and unified kernel development for the Xiaomi Snapdragon 660 chipset.</p>
+                    <div class="resume-project-links">
+                        <a href="https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/" target="_blank" rel="noopener noreferrer" aria-label="Xiaomi-sdm660 Custom OS Development - XDA">XDA <span aria-hidden="true">&#8599;</span></a>
+                        <a href="https://github.com/PradyX/android_device_xiaomi_sdm660-common" target="_blank" rel="noopener noreferrer" aria-label="Xiaomi-sdm660 Custom OS Development - Device Tree">Device Tree <span aria-hidden="true">&#8599;</span></a>
+                        <a href="https://github.com/PradyX/unified_kernel_sdm660" target="_blank" rel="noopener noreferrer" aria-label="Xiaomi-sdm660 Custom OS Development - Kernel">Kernel <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <div id="contact" class="contactSection">
         <div class="col-md-12 text-center">
             <hr class="line" width="40%">
             <h2>FOUND MY WORK INTERESTING? </h2>
             <p>Would love to hear from you!</p>
-            <a href="mailTo:pradyumnbhushan@gmail.com" class="mailButton">GET IN TOUCH</a>
+            <a href="mailto:pradyumnbhushan@gmail.com" class="mailButton">GET IN TOUCH</a>
+        </div>
+        <div class="profile-contact contact-details">
+            <a href="mailto:pradyumnbhushan@gmail.com">pradyumnbhushan@gmail.com</a>
+            <a href="tel:+917080968720">+91-7080968720</a>
         </div>
         <div class="social">
-            <!-- <a href="https://www.facebook.com/lordarcadius" class="facebook" target="_blank " rel="noopener"><i
-                    class="fab fa-facebook fa-2x"></i></a> -->
-            <a href="https://www.twitter.com/prady246" class="twitter" target="_blank" rel="noopener"><i
-                    class="fab fa-twitter fa-2x"></i></a>
-            <a href="https://www.instagram.com/__.prady._/" class="instagram" target="_blank" rel="noopener"><i
-                    class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://www.github.com/pradyx" class="github" target="_blank" rel="noopener"><i
-                    class="fab fa-github fa-2x"></i></a>
-            <!-- <a href="https://www.linkedin.com/in/lordarcadius/" class="linkedin" target="_blank" rel="noopener"><i
-                    class="fab fa-linkedin fa-2x"></i></a> -->
-            <a href="https://t.me/pradyx" class="telegram" target="_blank" rel="noopener"><i
-                    class="fab fa-telegram fa-2x"></i></a>
-            </a>
+            <a href="https://github.com/PradyX" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/pradyumn-bhushan-8b19a074/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a href="https://pradyx.github.io/" class="website-link" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fas fa-globe fa-2x" aria-hidden="true"></i></a>
         </div>
     </div>
 
