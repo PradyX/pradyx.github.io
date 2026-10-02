@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 @import "./superslides.css";
 @import "./themes.css";
 
@@ -288,7 +288,9 @@ h1, h2, h3, h4 {
 }
 
 .aboutImage {
-  max-width: 100%;
+  width: min(240px, 60vw);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -1023,15 +1025,14 @@ h1, h2, h3, h4 {
    ============================================================ */
 
 .contactSection {
-  padding: 40px 0 20px;
+  padding: 40px 0 0;
   background-color: var(--bg);
   color: var(--text);
 }
 
 .creditSection {
-  margin-top: 20px;
-  padding: 20px 5px 0;
-  border-top: 1px solid var(--border);
+  margin-top: 0;
+  padding: 22px 5px 0;
   color: var(--text-soft);
 }
 
@@ -1205,6 +1206,22 @@ h1, h2, h3, h4 {
 
 .swatch-nord {
   background: linear-gradient(135deg, #262c38, #88c0d0);
+}
+
+.swatch-apex {
+  background: linear-gradient(135deg, #101218, #ff4655);
+}
+
+.swatch-cyberpunk {
+  background: linear-gradient(135deg, #0d0b21, #fcee0a);
+}
+
+.swatch-synthwave {
+  background: linear-gradient(135deg, #1a0b2e, #ff2e97);
+}
+
+.swatch-vaporwave {
+  background: linear-gradient(135deg, #f6eefc, #c026d3);
 }
 
 .theme-swatch-random {

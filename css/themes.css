@@ -12,6 +12,10 @@
      sakura    - soft light pink with rose accents
      ember     - warm dark with orange/amber accents
      nord      - frost blue-gray dark (Nord-inspired)
+     apex      - gaming red/orange on gunmetal (Orbitron headings)
+     cyberpunk - neon yellow/pink on deep violet (Orbitron + mono)
+     synthwave - hot pink/orange on deep purple
+     vaporwave - pastel light with fuchsia/cyan
    ============================================================ */
 
 html[data-theme="midnight"] {
@@ -272,4 +276,140 @@ html[data-theme="nord"] {
   --shadow-lift: 0 22px 48px rgba(15, 18, 26, 0.40);
 
   --theme-color: #262c38;
+}
+
+html[data-theme="apex"] {
+  --font-heading: "Orbitron", "Space Grotesk", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #101218;
+  --bg-soft: #171a23;
+  --surface: rgba(255, 70, 85, 0.06);
+  --surface-2: rgba(255, 70, 85, 0.12);
+  --border: rgba(255, 70, 85, 0.18);
+  --border-strong: rgba(255, 138, 61, 0.36);
+
+  --text: #f2f4f8;
+  --text-soft: #c2c8d4;
+  --text-faint: #8b93a3;
+
+  --accent: #ff4655;
+  --accent-2: #ff8a3d;
+  --accent-contrast: #1a0608;
+  --gradient: linear-gradient(135deg, #ff4655, #ff8a3d);
+  --ring: #ff8a3d;
+
+  --nav-bg: rgba(16, 18, 24, 0.82);
+  --overlay: rgba(10, 8, 12, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(12, 8, 10, 0.92));
+  --tile-bg: #1c202b;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.38);
+  --shadow-lift: 0 22px 48px rgba(255, 70, 85, 0.22);
+
+  --theme-color: #101218;
+
+  --page-dim: 0.58;
+}
+
+html[data-theme="cyberpunk"] {
+  --font-heading: "Orbitron", "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --bg: #0d0b21;
+  --bg-soft: #150f33;
+  --surface: rgba(252, 238, 10, 0.05);
+  --surface-2: rgba(255, 42, 109, 0.10);
+  --border: rgba(252, 238, 10, 0.16);
+  --border-strong: rgba(255, 42, 109, 0.40);
+
+  --text: #f4f2ff;
+  --text-soft: #c4b9ee;
+  --text-faint: #8d82c4;
+
+  --accent: #fcee0a;
+  --accent-2: #ff2a6d;
+  --accent-contrast: #14091c;
+  --gradient: linear-gradient(135deg, #fcee0a, #ff2a6d);
+  --ring: #fcee0a;
+
+  --nav-bg: rgba(13, 11, 33, 0.84);
+  --overlay: rgba(8, 5, 24, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(8, 5, 24, 0.92));
+  --tile-bg: #191238;
+
+  --shadow-soft: 0 10px 30px rgba(255, 42, 109, 0.16);
+  --shadow-lift: 0 22px 48px rgba(252, 238, 10, 0.18);
+
+  --theme-color: #0d0b21;
+
+  --page-dim: 0.58;
+}
+
+html[data-theme="synthwave"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #1a0b2e;
+  --bg-soft: #25103f;
+  --surface: rgba(255, 46, 151, 0.08);
+  --surface-2: rgba(255, 158, 64, 0.12);
+  --border: rgba(255, 46, 151, 0.20);
+  --border-strong: rgba(255, 158, 64, 0.38);
+
+  --text: #ffe9f7;
+  --text-soft: #e3b6dd;
+  --text-faint: #a97cb8;
+
+  --accent: #ff2e97;
+  --accent-2: #00e5ff;
+  --accent-contrast: #2b0618;
+  --gradient: linear-gradient(135deg, #ff2e97, #ff9e40);
+  --ring: #ff7ac2;
+
+  --nav-bg: rgba(26, 11, 46, 0.82);
+  --overlay: rgba(16, 5, 32, 0.60);
+  --caption-bg: linear-gradient(transparent, rgba(16, 5, 32, 0.92));
+  --tile-bg: #2c1247;
+
+  --shadow-soft: 0 10px 30px rgba(255, 46, 151, 0.16);
+  --shadow-lift: 0 22px 48px rgba(255, 158, 64, 0.22);
+
+  --theme-color: #1a0b2e;
+
+  --page-dim: 0.56;
+}
+
+html[data-theme="vaporwave"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #f6eefc;
+  --bg-soft: #efe2fa;
+  --surface: rgba(192, 38, 211, 0.05);
+  --surface-2: rgba(8, 145, 178, 0.08);
+  --border: rgba(126, 34, 206, 0.14);
+  --border-strong: rgba(126, 34, 206, 0.28);
+
+  --text: #3b2a5a;
+  --text-soft: #5d4a7d;
+  --text-faint: #7c6a99;
+
+  --accent: #c026d3;
+  --accent-2: #0e7490;
+  --accent-contrast: #ffffff;
+  --gradient: linear-gradient(135deg, #c026d3, #7c3aed);
+  --ring: #c026d3;
+
+  --nav-bg: rgba(246, 238, 252, 0.84);
+  --overlay: rgba(60, 30, 90, 0.55);
+  --caption-bg: linear-gradient(transparent, rgba(52, 22, 82, 0.90));
+  --tile-bg: #ece0f8;
+
+  --shadow-soft: 0 10px 30px rgba(126, 34, 206, 0.12);
+  --shadow-lift: 0 22px 48px rgba(192, 38, 211, 0.18);
+
+  --theme-color: #f6eefc;
+
+  --page-dim: 0.72;
 }

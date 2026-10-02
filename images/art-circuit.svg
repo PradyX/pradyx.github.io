@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="ci-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061420"/>
+      <stop offset="1" stop-color="#04202a"/>
+    </linearGradient>
+    <linearGradient id="ci-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="ci-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <pattern id="ci-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0 H0 V80" fill="none" stroke="#0d3a44" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#ci-bg)"/>
+  <rect width="1600" height="900" fill="url(#ci-grid)"/>
+  <g fill="none" stroke="url(#ci-trace)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M80 160 H320 L420 260 H700"/>
+    <path d="M120 400 H260 L360 300 H520 L620 400 H900 L1000 300 H1360"/>
+    <path d="M200 660 H480 L580 560 H820 L920 660 H1240 L1340 560 H1520"/>
+    <path d="M1040 120 V320 L1140 420 V620"/>
+    <path d="M480 820 V700 L620 560"/>
+    <path d="M1420 160 V380 L1320 480 V700"/>
+  </g>
+  <g fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.5" filter="url(#ci-glow)">
+    <path d="M80 160 H320 L420 260 H700"/>
+    <path d="M120 400 H260 L360 300 H520 L620 400 H900 L1000 300 H1360"/>
+    <path d="M200 660 H480 L580 560 H820 L920 660 H1240 L1340 560 H1520"/>
+    <path d="M1040 120 V320 L1140 420 V620"/>
+    <path d="M480 820 V700 L620 560"/>
+    <path d="M1420 160 V380 L1320 480 V700"/>
+  </g>
+  <g fill="#0b2c38" stroke="#34d399" stroke-width="4">
+    <circle cx="80" cy="160" r="12"/><circle cx="700" cy="260" r="12"/>
+    <circle cx="120" cy="400" r="12"/><circle cx="1360" cy="300" r="12"/>
+    <circle cx="200" cy="660" r="12"/><circle cx="1520" cy="560" r="12"/>
+    <circle cx="1040" cy="120" r="12"/><circle cx="1140" cy="620" r="12"/>
+    <circle cx="480" cy="820" r="12"/><circle cx="1420" cy="160" r="12"/>
+    <circle cx="1320" cy="700" r="12"/><circle cx="620" cy="560" r="12"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.9">
+    <circle cx="320" cy="160" r="5"/><circle cx="520" cy="300" r="5"/><circle cx="900" cy="400" r="5"/>
+    <circle cx="820" cy="560" r="5"/><circle cx="1240" cy="660" r="5"/><circle cx="360" cy="300" r="5"/>
+  </g>
+</svg>

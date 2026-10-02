@@ -13,7 +13,7 @@
         // A theme manually chosen in the switcher is kept for the tab session.
         // Keep this list in sync with the data-theme-option buttons in the body.
         (function () {
-            var themes = ['midnight', 'aurora', 'paper', 'terminal', 'ocean', 'sakura', 'ember', 'nord'];
+            var themes = ['midnight', 'aurora', 'paper', 'terminal', 'ocean', 'sakura', 'ember', 'nord', 'apex', 'cyberpunk', 'synthwave', 'vaporwave'];
             var theme = null;
             try {
                 theme = sessionStorage.getItem('portfolio-theme');
@@ -75,6 +75,18 @@
             </button>
             <button type="button" class="theme-swatch" data-theme-option="nord" aria-pressed="false">
                 <span class="swatch swatch-nord" aria-hidden="true"></span>Nord
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="apex" aria-pressed="false">
+                <span class="swatch swatch-apex" aria-hidden="true"></span>Apex
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="cyberpunk" aria-pressed="false">
+                <span class="swatch swatch-cyberpunk" aria-hidden="true"></span>Cyberpunk
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="synthwave" aria-pressed="false">
+                <span class="swatch swatch-synthwave" aria-hidden="true"></span>Synthwave
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="vaporwave" aria-pressed="false">
+                <span class="swatch swatch-vaporwave" aria-hidden="true"></span>Vaporwave
             </button>
             <button type="button" class="theme-swatch theme-swatch-random" data-theme-random>
                 <span class="swatch swatch-random" aria-hidden="true"></span>Random
@@ -144,6 +156,13 @@
             <img src="images/slide8.jpg" alt="">
             <img src="images/slide9.jpg" alt="">
             <img src="images/slide10.jpg" alt="">
+            <!-- Locally authored abstract background artwork. -->
+            <img src="images/art-synthwave.svg" alt="">
+            <img src="images/art-aurora.svg" alt="">
+            <img src="images/art-circuit.svg" alt="">
+            <img src="images/art-orbs.svg" alt="">
+            <img src="images/art-bars.svg" alt="">
+            <img src="images/art-contours.svg" alt="">
         </div>
 
         <!-- <nav class="slides-navigation">
@@ -356,7 +375,7 @@
                 <div class="col-md-12 text-center">
                     <hr class="line" width="40%">
                     <h2>PERSONAL STATS</h2>
-                    <p>Experience and qualifications from my resume.</p>
+                    <p>Experience and project figures from my resume and portfolio.</p>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="squareItem">
@@ -391,8 +410,8 @@
                                 <i class="fas fa-download"></i>
                             </div>
                             <div class="squareContent">
-                                <h2><span class="counter">10</span><span>M+</span></h2>
-                                <h3>Rojgar With Ankit Downloads</h3>
+                                <h2><span class="counter">13</span><span>M+</span></h2>
+                                <h3>Total App Downloads</h3>
                             </div>
                         </div>
                     </div>
@@ -401,11 +420,11 @@
                     <div class="squareItem">
                         <div class="squareInnerContainer">
                             <div class="squareIcon">
-                                <i class="fab fa-wordpress"></i>
+                                <i class="fas fa-layer-group"></i>
                             </div>
                             <div class="squareContent">
-                                <h2 class="counter">2</h2>
-                                <h3>Qualifications</h3>
+                                <h2 class="counter">18</h2>
+                                <h3>Portfolio Projects</h3>
                             </div>
                         </div>
                     </div>
@@ -432,21 +451,22 @@
                 </div>
                 <div class="itemsContainer">
                     <ul class="row items">
-                        <li onclick="" class="apps col-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/thumbnails/flixify.jpg">
+                        <li class="roms eb resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="xiaomi-sdm660">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/xiaomi-sdm660.svg" alt="Xiaomi-sdm660 Custom OS Development" width="512" height="512" loading="lazy" decoding="async">
                                 <div class="icons">
-                                    <a href="images/portfolio/flixify.jpg" title="View Image" class="openButton"
-                                        data-fancybox
-                                        data-caption="Flixify was my personal open sourced streaming platfrom where I used to watch shows.">
-                                        <i class="far fa-eye"></i>
+                                    <a href="images/thumbnails/xiaomi-sdm660.svg" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Xiaomi-sdm660 Custom OS Development&lt;/strong&gt;&lt;br&gt;Device tree maintainer with hands-on experience in AOSP-based custom OS and unified kernel development for the Xiaomi Snapdragon 660 chipset.&lt;br&gt;10K+ downloads&lt;br&gt;&lt;a href=&quot;https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;XDA&lt;/a&gt; · &lt;a href=&quot;https://github.com/PradyX/android_device_xiaomi_sdm660-common&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Device Tree&lt;/a&gt; · &lt;a href=&quot;https://github.com/PradyX/unified_kernel_sdm660&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Kernel&lt;/a&gt;" aria-label="Preview Xiaomi-sdm660 Custom OS Development">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
                                     </a>
-                                    <a href="https://github.com/PradyX/Flixify" target="_blank" rel="noopener"
-                                        class="projectLink">
-                                        <i class="fa fa-link"></i>
+                                    <a href="https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Xiaomi-sdm660 Custom OS Development">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
                                 </div>
                                 <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Xiaomi SDM660</h3>
+                                    <span>10K+ downloads</span>
+                                </div>
                             </div>
                         </li>
                         <li onclick="" class="roms col-6 col-sm-4 col-md-3 col-lg-3">
@@ -883,22 +903,21 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="roms eb resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="xiaomi-sdm660">
-                            <div class="item resume-project-tile">
-                                <img src="images/thumbnails/xiaomi-sdm660.svg" alt="Xiaomi-sdm660 Custom OS Development" width="512" height="512" loading="lazy" decoding="async">
+                        <li onclick="" class="apps col-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/thumbnails/flixify.jpg">
                                 <div class="icons">
-                                    <a href="images/thumbnails/xiaomi-sdm660.svg" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Xiaomi-sdm660 Custom OS Development&lt;/strong&gt;&lt;br&gt;Device tree maintainer with hands-on experience in AOSP-based custom OS and unified kernel development for the Xiaomi Snapdragon 660 chipset.&lt;br&gt;10K+ downloads&lt;br&gt;&lt;a href=&quot;https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;XDA&lt;/a&gt; · &lt;a href=&quot;https://github.com/PradyX/android_device_xiaomi_sdm660-common&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Device Tree&lt;/a&gt; · &lt;a href=&quot;https://github.com/PradyX/unified_kernel_sdm660&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Kernel&lt;/a&gt;" aria-label="Preview Xiaomi-sdm660 Custom OS Development">
-                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    <a href="images/portfolio/flixify.jpg" title="View Image" class="openButton"
+                                        data-fancybox
+                                        data-caption="Flixify was my personal open sourced streaming platfrom where I used to watch shows.">
+                                        <i class="far fa-eye"></i>
                                     </a>
-                                    <a href="https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Xiaomi-sdm660 Custom OS Development">
-                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    <a href="https://github.com/PradyX/Flixify" target="_blank" rel="noopener"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
                                     </a>
                                 </div>
                                 <div class="imageOverlay"></div>
-                                <div class="resume-tile-caption">
-                                    <h3>Xiaomi SDM660</h3>
-                                    <span>10K+ downloads</span>
-                                </div>
                             </div>
                         </li>
                     </ul>
