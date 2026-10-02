@@ -1,0 +1,271 @@
+/* ============================================================
+   Theme definitions.
+   Each theme only overrides design tokens; every component
+   style in style.css picks these up automatically.
+
+   Themes:
+     midnight  - deep navy dark with blue/cyan accents (default)
+     aurora    - indigo dark with violet/teal gradient accents
+     paper     - warm light theme with ink text
+     terminal  - phosphor green developer console
+     ocean     - deep sea dark with sky/teal accents
+     sakura    - soft light pink with rose accents
+     ember     - warm dark with orange/amber accents
+     nord      - frost blue-gray dark (Nord-inspired)
+   ============================================================ */
+
+html[data-theme="midnight"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #0a0d14;
+  --bg-soft: #0e1220;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.20);
+
+  --text: #eef2f9;
+  --text-soft: #b6c0d4;
+  --text-faint: #8590a6;
+
+  --accent: #5b8cff;
+  --accent-2: #22d3ee;
+  --accent-contrast: #061024;
+  --gradient: linear-gradient(135deg, #5b8cff, #22d3ee);
+  --ring: #9ecbff;
+
+  --nav-bg: rgba(10, 13, 20, 0.78);
+  --overlay: rgba(5, 8, 15, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(4, 7, 14, 0.92));
+  --tile-bg: #171d2c;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.28);
+  --shadow-lift: 0 22px 48px rgba(0, 0, 0, 0.38);
+
+  --theme-color: #0a0d14;
+}
+
+html[data-theme="aurora"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #0f0b22;
+  --bg-soft: #140f2e;
+  --surface: rgba(167, 139, 250, 0.08);
+  --surface-2: rgba(167, 139, 250, 0.14);
+  --border: rgba(167, 139, 250, 0.18);
+  --border-strong: rgba(167, 139, 250, 0.34);
+
+  --text: #f2eefe;
+  --text-soft: #c6b9ee;
+  --text-faint: #9287c0;
+
+  --accent: #a78bfa;
+  --accent-2: #34d399;
+  --accent-contrast: #170b2e;
+  --gradient: linear-gradient(135deg, #a78bfa, #34d399);
+  --ring: #c4b5fd;
+
+  --nav-bg: rgba(15, 11, 34, 0.78);
+  --overlay: rgba(12, 8, 30, 0.60);
+  --caption-bg: linear-gradient(transparent, rgba(10, 6, 26, 0.92));
+  --tile-bg: #1c1538;
+
+  --shadow-soft: 0 10px 30px rgba(23, 11, 46, 0.35);
+  --shadow-lift: 0 22px 48px rgba(23, 11, 46, 0.45);
+
+  --theme-color: #0f0b22;
+}
+
+html[data-theme="paper"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #f6f4ef;
+  --bg-soft: #efece4;
+  --surface: rgba(28, 36, 48, 0.045);
+  --surface-2: rgba(28, 36, 48, 0.08);
+  --border: rgba(28, 36, 48, 0.12);
+  --border-strong: rgba(28, 36, 48, 0.24);
+
+  --text: #1c2430;
+  --text-soft: #4c5666;
+  --text-faint: #6b7686;
+
+  --accent: #2563eb;
+  --accent-2: #0d9488;
+  --accent-contrast: #ffffff;
+  --gradient: linear-gradient(135deg, #2563eb, #4f46e5);
+  --ring: #2563eb;
+
+  --nav-bg: rgba(246, 244, 239, 0.82);
+  --overlay: rgba(22, 28, 40, 0.55);
+  --caption-bg: linear-gradient(transparent, rgba(22, 28, 40, 0.90));
+  --tile-bg: #e9e6de;
+
+  --shadow-soft: 0 10px 30px rgba(28, 36, 48, 0.12);
+  --shadow-lift: 0 22px 48px rgba(28, 36, 48, 0.18);
+
+  --theme-color: #f6f4ef;
+}
+
+html[data-theme="terminal"] {
+  --font-heading: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --font-body: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --bg: #050805;
+  --bg-soft: #071007;
+  --surface: rgba(51, 255, 136, 0.05);
+  --surface-2: rgba(51, 255, 136, 0.10);
+  --border: rgba(51, 255, 136, 0.16);
+  --border-strong: rgba(51, 255, 136, 0.32);
+
+  --text: #c9f7d4;
+  --text-soft: #86d69b;
+  --text-faint: #57996a;
+
+  --accent: #33ff88;
+  --accent-2: #7dffbe;
+  --accent-contrast: #03140a;
+  --gradient: linear-gradient(135deg, #22c55e, #33ff88);
+  --ring: #33ff88;
+
+  --nav-bg: rgba(5, 8, 5, 0.82);
+  --overlay: rgba(2, 8, 4, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(2, 8, 4, 0.92));
+  --tile-bg: #0b150c;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --shadow-lift: 0 22px 48px rgba(0, 0, 0, 0.55);
+
+  --theme-color: #050805;
+}
+
+html[data-theme="ocean"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #04121c;
+  --bg-soft: #071a27;
+  --surface: rgba(56, 189, 248, 0.06);
+  --surface-2: rgba(56, 189, 248, 0.12);
+  --border: rgba(56, 189, 248, 0.16);
+  --border-strong: rgba(56, 189, 248, 0.30);
+
+  --text: #e2f4fb;
+  --text-soft: #a8d5e8;
+  --text-faint: #6fa5bb;
+
+  --accent: #38bdf8;
+  --accent-2: #2dd4bf;
+  --accent-contrast: #03121c;
+  --gradient: linear-gradient(135deg, #38bdf8, #2dd4bf);
+  --ring: #7dd3fc;
+
+  --nav-bg: rgba(4, 18, 28, 0.80);
+  --overlay: rgba(2, 12, 20, 0.60);
+  --caption-bg: linear-gradient(transparent, rgba(2, 12, 20, 0.92));
+  --tile-bg: #0b2231;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.32);
+  --shadow-lift: 0 22px 48px rgba(0, 0, 0, 0.42);
+
+  --theme-color: #04121c;
+}
+
+html[data-theme="sakura"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #fdf3f5;
+  --bg-soft: #f8e7ec;
+  --surface: rgba(190, 24, 93, 0.045);
+  --surface-2: rgba(190, 24, 93, 0.08);
+  --border: rgba(190, 24, 93, 0.12);
+  --border-strong: rgba(190, 24, 93, 0.22);
+
+  --text: #33222b;
+  --text-soft: #5d4550;
+  --text-faint: #7c6270;
+
+  --accent: #db2777;
+  --accent-2: #be123c;
+  --accent-contrast: #ffffff;
+  --gradient: linear-gradient(135deg, #db2777, #f472b6);
+  --ring: #db2777;
+
+  --nav-bg: rgba(253, 243, 245, 0.82);
+  --overlay: rgba(40, 16, 28, 0.55);
+  --caption-bg: linear-gradient(transparent, rgba(40, 16, 28, 0.90));
+  --tile-bg: #f6e3e9;
+
+  --shadow-soft: 0 10px 30px rgba(190, 24, 93, 0.10);
+  --shadow-lift: 0 22px 48px rgba(190, 24, 93, 0.16);
+
+  --theme-color: #fdf3f5;
+}
+
+html[data-theme="ember"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #170d07;
+  --bg-soft: #20120a;
+  --surface: rgba(251, 146, 60, 0.06);
+  --surface-2: rgba(251, 146, 60, 0.12);
+  --border: rgba(251, 146, 60, 0.16);
+  --border-strong: rgba(251, 146, 60, 0.32);
+
+  --text: #fbeee2;
+  --text-soft: #e0c3a8;
+  --text-faint: #a98565;
+
+  --accent: #fb923c;
+  --accent-2: #fbbf24;
+  --accent-contrast: #221005;
+  --gradient: linear-gradient(135deg, #f97316, #fbbf24);
+  --ring: #fdba74;
+
+  --nav-bg: rgba(23, 13, 7, 0.80);
+  --overlay: rgba(15, 8, 3, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(15, 8, 3, 0.92));
+  --tile-bg: #291509;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 22px 48px rgba(0, 0, 0, 0.45);
+
+  --theme-color: #170d07;
+}
+
+html[data-theme="nord"] {
+  --font-heading: "Space Grotesk", "Poppins", sans-serif;
+  --font-body: "Inter", "Poppins", sans-serif;
+
+  --bg: #262c38;
+  --bg-soft: #2b3240;
+  --surface: rgba(136, 192, 208, 0.07);
+  --surface-2: rgba(136, 192, 208, 0.12);
+  --border: rgba(136, 192, 208, 0.16);
+  --border-strong: rgba(136, 192, 208, 0.30);
+
+  --text: #eceff4;
+  --text-soft: #c3cad6;
+  --text-faint: #8d99ad;
+
+  --accent: #88c0d0;
+  --accent-2: #8fbcbb;
+  --accent-contrast: #20242e;
+  --gradient: linear-gradient(135deg, #88c0d0, #81a1c1);
+  --ring: #88c0d0;
+
+  --nav-bg: rgba(38, 44, 56, 0.80);
+  --overlay: rgba(24, 28, 38, 0.62);
+  --caption-bg: linear-gradient(transparent, rgba(24, 28, 38, 0.92));
+  --tile-bg: #333c4a;
+
+  --shadow-soft: 0 10px 30px rgba(15, 18, 26, 0.30);
+  --shadow-lift: 0 22px 48px rgba(15, 18, 26, 0.40);
+
+  --theme-color: #262c38;
+}

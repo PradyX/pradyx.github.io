@@ -8,6 +8,23 @@
     <link rel="shortcut icon" type="image/png" href="images/icons/fevicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content=#000000>
+    <script>
+        // Pick a random color theme on each visit, before first paint (no flash).
+        // A theme manually chosen in the switcher is kept for the tab session.
+        // Keep this list in sync with the data-theme-option buttons in the body.
+        (function () {
+            var themes = ['midnight', 'aurora', 'paper', 'terminal', 'ocean', 'sakura', 'ember', 'nord'];
+            var theme = null;
+            try {
+                theme = sessionStorage.getItem('portfolio-theme');
+                if (themes.indexOf(theme) === -1) { theme = null; }
+            } catch (e) { }
+            if (!theme) {
+                theme = themes[Math.floor(Math.random() * themes.length)];
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <meta name="description"
         content="Mobile application developer with around 4 years of experience in Kotlin, Java, Flutter, and AOSP custom ROM and kernel development.">
     <meta name="keywords"
@@ -30,6 +47,48 @@
 <body>
     <div class="loader">
         <div class="inner"></div>
+    </div>
+
+    <div class="theme-switcher" id="theme-switcher">
+        <div class="theme-menu" id="theme-menu" role="group" aria-label="Color themes" hidden>
+            <span class="theme-menu-title">Theme</span>
+            <button type="button" class="theme-swatch" data-theme-option="midnight" aria-pressed="true">
+                <span class="swatch swatch-midnight" aria-hidden="true"></span>Midnight
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="aurora" aria-pressed="false">
+                <span class="swatch swatch-aurora" aria-hidden="true"></span>Aurora
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="paper" aria-pressed="false">
+                <span class="swatch swatch-paper" aria-hidden="true"></span>Paper
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="terminal" aria-pressed="false">
+                <span class="swatch swatch-terminal" aria-hidden="true"></span>Terminal
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="ocean" aria-pressed="false">
+                <span class="swatch swatch-ocean" aria-hidden="true"></span>Ocean
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="sakura" aria-pressed="false">
+                <span class="swatch swatch-sakura" aria-hidden="true"></span>Sakura
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="ember" aria-pressed="false">
+                <span class="swatch swatch-ember" aria-hidden="true"></span>Ember
+            </button>
+            <button type="button" class="theme-swatch" data-theme-option="nord" aria-pressed="false">
+                <span class="swatch swatch-nord" aria-hidden="true"></span>Nord
+            </button>
+            <button type="button" class="theme-swatch theme-swatch-random" data-theme-random>
+                <span class="swatch swatch-random" aria-hidden="true"></span>Random
+            </button>
+        </div>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-expanded="false" aria-controls="theme-menu" aria-label="Choose color theme" title="Choose color theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3a9 9 0 0 0 0 18" fill="currentColor" stroke="none" opacity="0.35"/>
+                <circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none"/>
+                <circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none"/>
+                <circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+        </button>
     </div>
 
     <nav id="navigation" class="navbar navbar-expand-lg">
@@ -907,6 +966,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 </html>
