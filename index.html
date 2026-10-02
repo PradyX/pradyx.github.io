@@ -62,9 +62,6 @@
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#resume-projects">More Projects</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <!-- <li class="nav-item">
@@ -116,6 +113,7 @@
         </div>
         <div class="resume">
             <a href="files/resume.pdf" target="_blank" rel="noopener noreferrer" class="resumeButton">DOWNLOAD RESUME</a>
+            <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer" class="resumeButton" download="Pradyumn-Bhushan-CV.pdf" aria-label="Download CV (PDF)">DOWNLOAD CV</a>
         </div>
     </section>
     <section class="about_text">
@@ -128,10 +126,19 @@
                 for Xiaomi Snapdragon 660 devices, including device trees, kernel customization, and Android platform
                 internals. I enjoy debugging complex issues, working close to the Android framework, and understanding
                 how the operating system interacts with applications and hardware.</p>
-            <div class="profile-contact" aria-label="Contact details">
-                <a href="mailto:pradyumnbhushan@gmail.com">pradyumnbhushan@gmail.com</a>
-                <a href="tel:+917080968720">+91-7080968720</a>
-                <a href="https://www.linkedin.com/in/pradyumn-bhushan-8b19a074/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <div class="contact-links" aria-label="Professional contact links">
+                <a href="mailto:pradyumnbhushan@gmail.com" class="contact-icon-link" aria-label="Send an email" title="Email"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="#4285f4" d="M2 7.3v10.2a2 2 0 0 0 2 2h3v-8.7z"/>
+                        <path fill="#34a853" d="M17 19.5h3a2 2 0 0 0 2-2V7.3l-5 3.5z"/>
+                        <path fill="#fbbc04" d="M17 6.4v4.4l5-3.5V4.8a2 2 0 0 0-3.2-1.6L17 4.6z"/>
+                        <path fill="#ea4335" d="M7 10.8l5 3.8 5-3.8V6.4l-5 3.8-5-3.8z"/>
+                        <path fill="#c5221f" d="M2 7.3l5 3.5V4.6L5.2 3.2A2 2 0 0 0 2 4.8z"/>
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/pradyumn-bhushan-8b19a074/" class="contact-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <rect x="2" y="2" width="20" height="20" rx="3" fill="#0a66c2"/>
+                        <circle cx="7.2" cy="7.3" r="1.6" fill="#fff"/>
+                        <path fill="#fff" d="M5.8 10h2.8v8.4H5.8zM10.5 10h2.7v1.2c.6-.9 1.5-1.5 2.9-1.5 2.5 0 3.2 1.6 3.2 4v4.7h-2.8v-4.2c0-1.2-.2-2.2-1.6-2.2s-1.7 1.1-1.7 2.2v4.2h-2.7z"/>
+                    </svg></a>
             </div>
         </div>
     </section>
@@ -608,161 +615,280 @@
                                 <div class="imageOverlay"></div>
                             </div>
                         </li> -->
+                        <!-- Resume projects, with local artwork from their official listings. -->
+                        <li id="resume-projects" class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="indias-got-latent">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/indias-got-latent.jpg" alt="India&#x27;s Got Latent" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/indias-got-latent-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;India&amp;#x27;s Got Latent&lt;/strong&gt;&lt;br&gt;Official app of Samay Raina featuring exclusive comedy content, shows, and talent-driven entertainment.&lt;br&gt;500K+ downloads" aria-label="Preview India&#x27;s Got Latent">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.umdeos.bdwjdx" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open India&#x27;s Got Latent">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>India&#x27;s Got Latent</h3>
+                                    <span>500K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="upstdc">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/upstdc.png" alt="UPSTDC: Hotels, Tour Package Booking" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/upstdc-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;UPSTDC: Hotels, Tour Package Booking&lt;/strong&gt;&lt;br&gt;Government-focused Android application for booking hotels.&lt;br&gt;50K+ downloads" aria-label="Preview UPSTDC: Hotels, Tour Package Booking">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=live.app.upstdconline" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open UPSTDC: Hotels, Tour Package Booking">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>UPSTDC</h3>
+                                    <span>50K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="jal-jeevan-mission">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/jal-jeevan-mission.png" alt="Jal Jeevan Mission: Grievance Redressal System" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/jal-jeevan-mission-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Jal Jeevan Mission: Grievance Redressal System&lt;/strong&gt;&lt;br&gt;Government-focused Android application for complaint tracking and grievance management.&lt;br&gt;10K+ downloads" aria-label="Preview Jal Jeevan Mission: Grievance Redressal System">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.app.jalsamadhan" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Jal Jeevan Mission: Grievance Redressal System">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Jal Jeevan Mission</h3>
+                                    <span>10K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="pocket-llm">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/pocket-llm.png" alt="Pocket LLM" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/pocket-llm-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Pocket LLM&lt;/strong&gt;&lt;br&gt;App enabling fully on-device LLM chat using GGUF models and llama.cpp." aria-label="Preview Pocket LLM">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://github.com/PradyX/pocket_llm" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Pocket LLM">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Pocket LLM</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="rojgar-with-ankit">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/rojgar-with-ankit.png" alt="Rojgar With Ankit (RWA)" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/rojgar-with-ankit-screenshot.jpg" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Rojgar With Ankit (RWA)&lt;/strong&gt;&lt;br&gt;Competitive exam preparation platform providing extensive study content, weekly tests, and performance tracking for aspirants in SSC, police, banking, and other government exams.&lt;br&gt;10M+ downloads" aria-label="Preview Rojgar With Ankit (RWA)">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.appx.rojgar_with_ankit" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Rojgar With Ankit (RWA)">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Rojgar With Ankit (RWA)</h3>
+                                    <span>10M+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="rbe">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/rbe.png" alt="RBE Revolution By Education" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/rbe-screenshot.jpg" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;RBE Revolution By Education&lt;/strong&gt;&lt;br&gt;Education app offering structured learning content for students.&lt;br&gt;500K+ downloads" aria-label="Preview RBE Revolution By Education">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.revolution.education" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open RBE Revolution By Education">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>RBE Revolution By Education</h3>
+                                    <span>500K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="kaxa">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/kaxa.jpg" alt="Kaxa: Learn Via Short Videos" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/kaxa-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Kaxa: Learn Via Short Videos&lt;/strong&gt;&lt;br&gt;Android app focused on short-form educational video content.&lt;br&gt;1K+ downloads" aria-label="Preview Kaxa: Learn Via Short Videos">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.kaxa.app" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Kaxa: Learn Via Short Videos">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Kaxa: Learn Via Short Videos</h3>
+                                    <span>1K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="test-pass">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/test-pass.png" alt="Test Pass" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/test-pass-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Test Pass&lt;/strong&gt;&lt;br&gt;A comprehensive exam preparation app offering category-wise practice tests for major competitive exams in India.&lt;br&gt;1M+ downloads" aria-label="Preview Test Pass">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.speedycurrent.speedycurrentaffairs2019" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Test Pass">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Test Pass</h3>
+                                    <span>1M+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="banking-mitra">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/banking-mitra.png" alt="Banking Mitra: Mobile Recharge, BBPS Bill Payment" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/banking-mitra-screenshot.jpg" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Banking Mitra: Mobile Recharge, BBPS Bill Payment&lt;/strong&gt;&lt;br&gt;A digital banking platform enabling retailers to offer Aadhaar ATM, bill payments, and essential financial services.&lt;br&gt;10K+ downloads" aria-label="Preview Banking Mitra: Mobile Recharge, BBPS Bill Payment">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.payment.bankingmitra" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Banking Mitra: Mobile Recharge, BBPS Bill Payment">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Banking Mitra</h3>
+                                    <span>10K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="appx-admin">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/appx-admin.png" alt="AppX Admin" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/appx-admin-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;AppX Admin&lt;/strong&gt;&lt;br&gt;Companion admin application for managing student profiles, enrollments, attendance, and educational content across the AppX ecosystem.&lt;br&gt;10K+ downloads" aria-label="Preview AppX Admin">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.appx.admin&amp;hl=en_IN" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open AppX Admin">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>AppX Admin</h3>
+                                    <span>10K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="chandan-logics">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/chandan-logics.png" alt="Chandan Logics" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/chandan-logics-screenshot.jpg" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Chandan Logics&lt;/strong&gt;&lt;br&gt;App designed in a structured manner to assist preparation for various examinations.&lt;br&gt;500K+ downloads" aria-label="Preview Chandan Logics">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=co.jarvis.clog" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Chandan Logics">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Chandan Logics</h3>
+                                    <span>500K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="apps resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="apni-padhai">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/apni-padhai.jpg" alt="Apni Padhai" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/portfolio/apni-padhai-screenshot.png" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Apni Padhai&lt;/strong&gt;&lt;br&gt;An online platform for full preparation for competitive exams.&lt;br&gt;500K+ downloads" aria-label="Preview Apni Padhai">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.aapni.padhai" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Apni Padhai">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Apni Padhai</h3>
+                                    <span>500K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="roms eb resume-project col-6 col-sm-4 col-md-3 col-lg-3" data-project="xiaomi-sdm660">
+                            <div class="item resume-project-tile">
+                                <img src="images/thumbnails/xiaomi-sdm660.svg" alt="Xiaomi-sdm660 Custom OS Development" width="512" height="512" loading="lazy" decoding="async">
+                                <div class="icons">
+                                    <a href="images/thumbnails/xiaomi-sdm660.svg" title="View Image" class="openButton" data-fancybox="portfolio" data-caption="&lt;strong&gt;Xiaomi-sdm660 Custom OS Development&lt;/strong&gt;&lt;br&gt;Device tree maintainer with hands-on experience in AOSP-based custom OS and unified kernel development for the Xiaomi Snapdragon 660 chipset.&lt;br&gt;10K+ downloads&lt;br&gt;&lt;a href=&quot;https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;XDA&lt;/a&gt; · &lt;a href=&quot;https://github.com/PradyX/android_device_xiaomi_sdm660-common&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Device Tree&lt;/a&gt; · &lt;a href=&quot;https://github.com/PradyX/unified_kernel_sdm660&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Kernel&lt;/a&gt;" aria-label="Preview Xiaomi-sdm660 Custom OS Development">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/" target="_blank" rel="noopener noreferrer" class="projectLink" aria-label="Open Xiaomi-sdm660 Custom OS Development">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                                <div class="resume-tile-caption">
+                                    <h3>Xiaomi SDM660</h3>
+                                    <span>10K+ downloads</span>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Resume-backed additions. The original portfolio gallery above is preserved. -->
-    <section id="resume-projects" class="resume-section">
+    <section id="contact" class="contactSection">
         <div class="container">
-            <div class="section-heading">
-                <hr class="line" width="40%">
-                <h2>MORE PROJECTS</h2>
-                <p>Production applications and platform work from my resume.</p>
-            </div>
-            <div class="resume-project-grid">
-                <article class="resume-project-card">
-                    <h3>India&#x27;s Got Latent</h3>
-                    <p class="project-downloads">500K+ downloads</p>
-                    <p class="resume-project-description">Official app of Samay Raina featuring exclusive comedy content, shows, and talent-driven entertainment.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.umdeos.bdwjdx" target="_blank" rel="noopener noreferrer" aria-label="India&#x27;s Got Latent - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>UPSTDC: Hotels, Tour Package Booking</h3>
-                    <p class="project-downloads">50K+ downloads</p>
-                    <p class="resume-project-description">Government-focused Android application for booking hotels.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=live.app.upstdconline" target="_blank" rel="noopener noreferrer" aria-label="UPSTDC: Hotels, Tour Package Booking - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Jal Jeevan Mission: Grievance Redressal System</h3>
-                    <p class="project-downloads">10K+ downloads</p>
-                    <p class="resume-project-description">Government-focused Android application for complaint tracking and grievance management.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.app.jalsamadhan" target="_blank" rel="noopener noreferrer" aria-label="Jal Jeevan Mission: Grievance Redressal System - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Pocket LLM</h3>
-                    <p class="resume-project-description">App enabling fully on-device LLM chat using GGUF models and llama.cpp.</p>
-                    <div class="resume-project-links">
-                        <a href="https://github.com/PradyX/pocket_llm" target="_blank" rel="noopener noreferrer" aria-label="Pocket LLM - GitHub">GitHub <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Rojgar With Ankit (RWA)</h3>
-                    <p class="project-downloads">10M+ downloads</p>
-                    <p class="resume-project-description">Competitive exam preparation platform providing extensive study content, weekly tests, and performance tracking for aspirants in SSC, police, banking, and other government exams.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.appx.rojgar_with_ankit" target="_blank" rel="noopener noreferrer" aria-label="Rojgar With Ankit (RWA) - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>RBE Revolution By Education</h3>
-                    <p class="project-downloads">500K+ downloads</p>
-                    <p class="resume-project-description">Education app offering structured learning content for students.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.revolution.education" target="_blank" rel="noopener noreferrer" aria-label="RBE Revolution By Education - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Kaxa: Learn Via Short Videos</h3>
-                    <p class="project-downloads">1K+ downloads</p>
-                    <p class="resume-project-description">Android app focused on short-form educational video content.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.kaxa.app" target="_blank" rel="noopener noreferrer" aria-label="Kaxa: Learn Via Short Videos - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Test Pass</h3>
-                    <p class="project-downloads">1M+ downloads</p>
-                    <p class="resume-project-description">A comprehensive exam preparation app offering category-wise practice tests for major competitive exams in India.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.speedycurrent.speedycurrentaffairs2019" target="_blank" rel="noopener noreferrer" aria-label="Test Pass - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Banking Mitra: Mobile Recharge, BBPS Bill Payment</h3>
-                    <p class="project-downloads">10K+ downloads</p>
-                    <p class="resume-project-description">A digital banking platform enabling retailers to offer Aadhaar ATM, bill payments, and essential financial services.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.payment.bankingmitra" target="_blank" rel="noopener noreferrer" aria-label="Banking Mitra: Mobile Recharge, BBPS Bill Payment - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>AppX Admin</h3>
-                    <p class="project-downloads">10K+ downloads</p>
-                    <p class="resume-project-description">Companion admin application for managing student profiles, enrollments, attendance, and educational content across the AppX ecosystem.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.appx.admin&amp;hl=en_IN" target="_blank" rel="noopener noreferrer" aria-label="AppX Admin - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Chandan Logics</h3>
-                    <p class="project-downloads">500K+ downloads</p>
-                    <p class="resume-project-description">App designed in a structured manner to assist preparation for various examinations.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=co.jarvis.clog" target="_blank" rel="noopener noreferrer" aria-label="Chandan Logics - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Apni Padhai</h3>
-                    <p class="project-downloads">500K+ downloads</p>
-                    <p class="resume-project-description">An online platform for full preparation for competitive exams.</p>
-                    <div class="resume-project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.aapni.padhai" target="_blank" rel="noopener noreferrer" aria-label="Apni Padhai - Google Play">Google Play <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-                <article class="resume-project-card">
-                    <h3>Xiaomi-sdm660 Custom OS Development</h3>
-                    <p class="project-downloads">10K+ downloads</p>
-                    <p class="resume-project-description">Device tree maintainer with hands-on experience in AOSP-based custom OS and unified kernel development for the Xiaomi Snapdragon 660 chipset.</p>
-                    <div class="resume-project-links">
-                        <a href="https://xdaforums.com/t/rom-12-0-alpha-derpfest-s-for-mi-a2-official-jasmine_sprout.4359615/" target="_blank" rel="noopener noreferrer" aria-label="Xiaomi-sdm660 Custom OS Development - XDA">XDA <span aria-hidden="true">&#8599;</span></a>
-                        <a href="https://github.com/PradyX/android_device_xiaomi_sdm660-common" target="_blank" rel="noopener noreferrer" aria-label="Xiaomi-sdm660 Custom OS Development - Device Tree">Device Tree <span aria-hidden="true">&#8599;</span></a>
-                        <a href="https://github.com/PradyX/unified_kernel_sdm660" target="_blank" rel="noopener noreferrer" aria-label="Xiaomi-sdm660 Custom OS Development - Kernel">Kernel <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
+            <div class="contact-panel text-center">
+                <h2>LET'S CONNECT</h2>
+                <p>Android, Flutter, and AOSP development.</p>
+                <div class="contact-links contact-links-center" aria-label="Professional contact links">
+                    <a href="mailto:pradyumnbhushan@gmail.com" class="contact-icon-link" aria-label="Send an email" title="Email"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="#4285f4" d="M2 7.3v10.2a2 2 0 0 0 2 2h3v-8.7z"/>
+                        <path fill="#34a853" d="M17 19.5h3a2 2 0 0 0 2-2V7.3l-5 3.5z"/>
+                        <path fill="#fbbc04" d="M17 6.4v4.4l5-3.5V4.8a2 2 0 0 0-3.2-1.6L17 4.6z"/>
+                        <path fill="#ea4335" d="M7 10.8l5 3.8 5-3.8V6.4l-5 3.8-5-3.8z"/>
+                        <path fill="#c5221f" d="M2 7.3l5 3.5V4.6L5.2 3.2A2 2 0 0 0 2 4.8z"/>
+                    </svg></a>
+                    <a href="https://www.linkedin.com/in/pradyumn-bhushan-8b19a074/" class="contact-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <rect x="2" y="2" width="20" height="20" rx="3" fill="#0a66c2"/>
+                        <circle cx="7.2" cy="7.3" r="1.6" fill="#fff"/>
+                        <path fill="#fff" d="M5.8 10h2.8v8.4H5.8zM10.5 10h2.7v1.2c.6-.9 1.5-1.5 2.9-1.5 2.5 0 3.2 1.6 3.2 4v4.7h-2.8v-4.2c0-1.2-.2-2.2-1.6-2.2s-1.7 1.1-1.7 2.2v4.2h-2.7z"/>
+                    </svg></a>
+                    <a href="https://github.com/PradyX" class="contact-icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://pradyx.github.io/" class="contact-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Website" title="Website"><i class="fas fa-globe" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </section>
-
-    <div id="contact" class="contactSection">
-        <div class="col-md-12 text-center">
-            <hr class="line" width="40%">
-            <h2>FOUND MY WORK INTERESTING? </h2>
-            <p>Would love to hear from you!</p>
-            <a href="mailto:pradyumnbhushan@gmail.com" class="mailButton">GET IN TOUCH</a>
-        </div>
-        <div class="profile-contact contact-details">
-            <a href="mailto:pradyumnbhushan@gmail.com">pradyumnbhushan@gmail.com</a>
-            <a href="tel:+917080968720">+91-7080968720</a>
-        </div>
-        <div class="social">
-            <a href="https://github.com/PradyX" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/pradyumn-bhushan-8b19a074/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
-            <a href="https://pradyx.github.io/" class="website-link" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fas fa-globe fa-2x" aria-hidden="true"></i></a>
-        </div>
-    </div>
 
     <div class="creditSection">
         <div class="col-md-12 text-center">
             <p>Designed with <span class="heart">&hearts;</span> by <a href="https://www.github.com/pradyx"
                     target="_blank" rel="noopener">Pradyumn Bhushan</a></p>
-            <p>Special thanks to <a href="https://github.com/lordarcadius/lordarcadius.github.io" target="_blank"
-                    rel="noopener">Vipul
-                    Jha</a> & <a href="https://dhruvsaxena1998.github.io/" target="_blank" rel="noopener">Dhruv
-                    Saxena</a></p>
         </div>
     </div>
     <div class="copyrightSection">
         <div class="col-md-12 text-center">
-            <p>&copy; 2020 Pradyumn Bhushan. All rights reserved.</p>
+            <p>&copy; 2026 Pradyumn Bhushan. All rights reserved.</p>
         </div>
     </div>
 

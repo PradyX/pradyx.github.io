@@ -104,8 +104,24 @@ body {
 }
 
 .resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 0 20px;
   text-align: center;
   color: #ffffff;
+}
+
+.resume .resumeButton {
+  margin-top: 0;
+}
+
+.resume .resumeButton:focus-visible {
+  outline: 2px solid #9ecbff;
+  outline-offset: 4px;
 }
 
 .about_para {
@@ -136,16 +152,70 @@ body {
   margin-top: 16px;
 }
 
-.profile-contact {
+.contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 24px;
-  padding-top: 20px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
 }
 
-.profile-contact a {
-  color: #d7ebff;
-  overflow-wrap: anywhere;
+.contact-links .contact-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #363636;
+  border-radius: 14px;
+  background: #151515;
+  color: #eee;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+.contact-links .contact-icon-link:hover {
+  transform: translateY(-3px);
+  background: #222;
+  border-color: #777;
+  color: #fff;
+}
+
+.contact-links .contact-icon-link:focus-visible {
+  outline: 2px solid #9ecbff;
+  outline-offset: 4px;
+}
+
+.contact-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+.contact-panel {
+  max-width: 720px;
+  margin-inline: auto;
+  padding: 40px 24px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #141414, #070707);
+}
+
+.contact-panel h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.contact-panel p {
+  color: #bdbdbd;
+  margin: 16px 0 0;
+  line-height: 1.7;
+}
+
+.contact-links-center {
+  justify-content: center;
+  margin-top: 28px;
 }
 
 .experience-entry {
@@ -158,8 +228,7 @@ body {
   margin-bottom: 0;
 }
 
-.experience-entry h3, .education-entry h3, .skill-group h3,
-.resume-project-card h3 {
+.experience-entry h3, .education-entry h3, .skill-group h3 {
   font-size: 20px;
   line-height: 1.5;
 }
@@ -185,13 +254,13 @@ body {
   margin-bottom: 10px;
 }
 
-.education-grid, .skills-grid, .resume-project-grid {
+.education-grid, .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
-.education-entry, .skill-group, .resume-project-card {
+.education-entry, .skill-group {
   min-width: 0;
   padding: 24px;
   border: 1px solid #444;
@@ -216,52 +285,6 @@ body {
   letter-spacing: 0;
 }
 
-.resume-project-card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.resume-project-card h3, .resume-project-card p {
-  margin: 0;
-}
-
-.project-downloads {
-  color: #9bdcbf;
-  font-size: 13px;
-}
-
-.resume-project-description {
-  color: #dedede;
-  line-height: 1.8;
-}
-
-.resume-project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: auto;
-  padding-top: 8px;
-}
-
-.resume-project-links a {
-  display: inline-block;
-  color: #d7ebff;
-  padding: 8px 12px;
-  border: 1px solid #444;
-  border-radius: 3px;
-}
-
-.resume-project-links a:hover, .resume-project-links a:focus {
-  background: #222;
-  color: #fff;
-}
-
-.contact-details {
-  justify-content: center;
-  padding-inline: 20px;
-}
-
 .website-link {
   color: #fff;
   padding: 6px;
@@ -272,7 +295,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .education-grid, .skills-grid, .resume-project-grid {
+  .education-grid, .skills-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -280,7 +303,7 @@ body {
     padding: 60px 0;
   }
 
-  .education-entry, .skill-group, .resume-project-card {
+  .education-entry, .skill-group {
     padding: 20px;
   }
 }
@@ -566,6 +589,63 @@ body {
   -o-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
   -transform: scale(1.05, 1.05);
+}
+
+/* Added projects share the original gallery's square tiles and hover controls. */
+.resume-project-tile {
+  aspect-ratio: 1;
+  background: #171717;
+}
+
+.items .resume-project-tile > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.resume-tile-caption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 28px 12px 12px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .9));
+  pointer-events: none;
+  z-index: 2;
+}
+
+.resume-tile-caption h3 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: .2px;
+}
+
+.resume-tile-caption span {
+  display: block;
+  margin-top: 4px;
+  color: #dedede;
+  font-size: 10px;
+  letter-spacing: .2px;
+}
+
+.items .resume-project-tile:focus-within .imageOverlay {
+  opacity: 1;
+}
+
+.items .resume-project-tile:focus-within .openButton {
+  left: 0;
+}
+
+.items .resume-project-tile:focus-within .projectLink {
+  right: 0;
+}
+
+@media (hover: none) {
+  .items .resume-project-tile .openButton { left: 0; }
+  .items .resume-project-tile .projectLink { right: 0; }
+  .items .resume-project-tile .icons { top: 40%; }
 }
 
 .items {
