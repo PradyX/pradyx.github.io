@@ -108,6 +108,8 @@ html[data-theme="paper"] {
   --shadow-lift: 0 22px 48px rgba(28, 36, 48, 0.18);
 
   --theme-color: #f6f4ef;
+
+  --page-dim: 0.72;
 }
 
 html[data-theme="terminal"] {
@@ -204,6 +206,8 @@ html[data-theme="sakura"] {
   --shadow-lift: 0 22px 48px rgba(190, 24, 93, 0.16);
 
   --theme-color: #fdf3f5;
+
+  --page-dim: 0.72;
 }
 
 html[data-theme="ember"] {

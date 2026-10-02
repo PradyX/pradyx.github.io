@@ -24,14 +24,19 @@ $(document).ready(function () {
         pagination: false
     });
 
-    var typed = new Typed(".typed", {
-        strings: ["Mobile Application Developer", "AOSP | Kotlin | Java | Flutter", "Custom ROM and Kernel Development"],
+    var typedStrings = ["Mobile Application Developer", "AOSP | Kotlin | Java | Flutter", "Custom ROM and Kernel Development"];
+    var typedOptions = {
+        strings: typedStrings,
         typeSpeed: 50,
         loop: true,
         startDelay: 400,
         showCursor: false
+    };
 
-    });
+    // Typed.js animates only the first match of a selector, so each
+    // animated line gets its own instance with the same strings.
+    var typed = new Typed(".typed", typedOptions);
+    var typedAbout = new Typed(".typed-about", typedOptions);
 
     var skillsTopOffset = $(".skillsSection").offset().top;
     var statsTopOffset = $(".statsSection").offset().top;

@@ -39,6 +39,9 @@
   --radius: 18px;
   --radius-sm: 12px;
   --theme-color: #0a0d14;
+
+  /* Dim strength of the full-page slideshow background. */
+  --page-dim: 0.55;
 }
 
 * {
@@ -89,17 +92,29 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================================
-   Hero slideshow
+   Full-page slideshow background
+   (superslides writes inline position/height; pinned with
+   !important so the plugin's own styles cannot escape it)
    ============================================================ */
+
+#slides {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 0;
+}
 
 .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 3;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.25), transparent 35%, var(--overlay)),
-    var(--overlay);
+  background-color: var(--bg);
+  opacity: var(--page-dim);
 }
 
 .slides-navigation {
@@ -124,37 +139,39 @@ h1, h2, h3, h4 {
   background-image: url(../images/icons/next.png);
 }
 
+/* Closing name + typed subtitle block, placed above Let's Connect. */
 .TitleMessage {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
+  position: static;
+  width: auto;
   text-align: center;
-  padding: 0 16px;
+  padding: 10px 16px 48px;
+}
+
+.TitleMessage .heading {
+  padding-top: 0;
 }
 
 .TitleMessage .heading p {
-  color: #ffffff;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+  color: var(--text);
   font-weight: 400;
   letter-spacing: 4px;
 }
 
 .TitleMessage .heading .main {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 6vw, 4.25rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 600;
   letter-spacing: 5px;
 }
 
 .TitleMessage .heading .sub {
   margin-top: 10px;
-  font-size: clamp(0.95rem, 2.6vw, 1.65rem);
-  font-weight: 300;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
   color: var(--accent-2);
-  letter-spacing: 6px;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+  letter-spacing: 5px;
+  line-height: 1.75;
+  min-height: 3.5em;
 }
 
 /* ============================================================
@@ -303,6 +320,13 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+/* Typed lines reserve their height so the layout never jumps while
+   the text backspaces and retypes (both animated lines). */
+.sub_heading .typed-about {
+  line-height: 1.2;
+  min-height: 2.4em;
 }
 
 .resume {
@@ -1193,6 +1217,38 @@ h1, h2, h3, h4 {
 
 .swatch-random {
   background: var(--gradient);
+}
+
+/* ============================================================
+   Content sections float above the fixed slideshow background.
+   The plain background-color keeps sections opaque in browsers
+   without color-mix support.
+   ============================================================ */
+
+.about_profile,
+.about_text,
+.resume-section,
+.skillsSection,
+.statsSection,
+.contactSection,
+.creditSection,
+.copyrightSection {
+  position: relative;
+  z-index: 2;
+  background-color: var(--bg);
+  background-color: color-mix(in srgb, var(--bg) 86%, transparent);
+}
+
+/* One line is enough for the typed lines from 560px up; below that
+   the longest string wraps to two lines, so reserve two. */
+@media screen and (min-width: 560px) {
+  .TitleMessage .heading .sub {
+    min-height: 1.75em;
+  }
+
+  .sub_heading .typed-about {
+    min-height: 1.2em;
+  }
 }
 
 /* ============================================================
